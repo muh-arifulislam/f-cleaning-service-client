@@ -1,0 +1,33 @@
+.custom-button {
+  background-color: #fef22e;
+  color: rgb(75, 72, 72);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 25px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  transition: all 0.5s ease-out;
+}
+
+.custom-button::before {
+  content: "";
+  height: 100%;
+  width: 0;
+  background-color: #14287b;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  transition: all 0.45s ease-out;
+}
+
+.custom-button:hover::before{
+    width: 100%;
+}
+.custom-button:hover{
+    color: white;
+}
