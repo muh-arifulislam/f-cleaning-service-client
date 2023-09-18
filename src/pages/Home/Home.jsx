@@ -2,6 +2,11 @@ import React from "react";
 import image from "../../assets/images/slide1_3.jpg";
 import Button from "../../components/Button";
 import TopFeature from "./TopFeature";
+import ServiceSlider from "./ServiceSlider";
+import OurWorkingExperts from "./OurWorkingExperts";
+import image2 from "../../assets/images/section-bg15.jpg";
+import WhyChooseUs from "./WhyChooseUs";
+import WorkingProcess from "./WorkingProcess";
 const Home = () => {
   return (
     <div>
@@ -33,6 +38,22 @@ const Home = () => {
         </div>
       </section>
       <TopFeature />
+      <section
+        className="py-[120px] relative z-0"
+        style={{ backgroundImage: `url(${image2})` }}
+      >
+        <div className="absolute top-0 left-0 w-full h-full bg-blue-900 opacity-80 z-[-1]"></div>
+        <div className="flex justify-center">
+          <div className="p-[10px] z-[2] text-center">
+            <h2 className="text-4xl font-semibold mb-8">Get started with your free estimate</h2>
+            <Button>Book Service</Button>
+          </div>
+        </div>
+      </section>
+      <WhyChooseUs/>
+      <WorkingProcess/>
+      <ServiceSlider />
+      <OurWorkingExperts />
     </div>
   );
 };
