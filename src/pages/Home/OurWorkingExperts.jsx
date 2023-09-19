@@ -17,7 +17,7 @@ const OurWorkingExperts = () => {
     slidePerView = 1;
   }
   return (
-    <section className="py-[80px]">
+    <section className="py-[80px] ">
       <div className="max-w-[1200px] mx-auto">
         <div className="text-center mb-5">
           <h2 className="text-4xl font-semibold mb-5">Our Working Experts</h2>
