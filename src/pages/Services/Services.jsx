@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import SectionHeader from "../../components/SectionHeader";
 
 const Services = () => {
   return (
-    <div>Services</div>
-  )
-}
+    <section>
+      <SectionHeader title="Services Tab" />
+    </section>
+  );
+};
 
-export default Services
+export default Services;

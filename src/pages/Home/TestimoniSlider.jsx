@@ -1,5 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
 import userLogo from "../../assets/icons/user.png";
+import figureLogo from "../../assets/icons/figure18.png";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,15 +13,45 @@ import "./styles.css";
 // import required modules
 import { Pagination } from "swiper/modules";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
-import { FaStar } from "react-icons/fa";
+import { FaQuoteLeft, FaQuoteRight, FaStar } from "react-icons/fa";
 const TestimoniSlider = () => {
+  const [testimonials, setTestimonials] = useState([
+    {
+      name: "Md. Ariful Islam",
+      occupation: "CEO, RT",
+      ratings: 4,
+      testimoni:
+        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
+    },
+    {
+      name: "Md. Ariful Islam",
+      occupation: "CEO, RT",
+      ratings: 4,
+      testimoni:
+        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
+    },
+    {
+      name: "Md. Ariful Islam",
+      occupation: "CEO, RT",
+      ratings: 4,
+      testimoni:
+        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
+    },
+    {
+      name: "Md. Ariful Islam",
+      occupation: "CEO, RT",
+      ratings: 4,
+      testimoni:
+        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
+    },
+  ]);
   let slidePerView = 2;
   if (window.screen.availWidth < 570) {
     slidePerView = 1;
   }
   return (
-    <section className=" py-[80px] bg-blue-900">
-      <div className="max-w-[1260px] mx-auto">
+    <section className="relative py-[80px] bg-blue-900 overflow-hidden z-[0]">
+      <div className="max-w-[1260px] mx-auto z-[1]">
         <div className="mb-8 text-center">
           <h4 className="text-4xl font-semibold mb-2 text-white">
             <span className="block mb-1">What’s Client’s Say</span>
@@ -38,113 +69,49 @@ const TestimoniSlider = () => {
             modules={[Pagination]}
             className="mySwiper"
           >
-            <SwiperSlide>
-              <div className="relative px-[30px] py-[60px] rounded-md shadow-xl text-center">
-                <div>
-                  <div className="flex justify-center items-center gap-1 text-orange-500">
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                  </div>
-                  <p className="my-[28px] w-[80%] mx-auto">
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere pariatur ratione magnam tempore, similique in
-                    exercitationem."
-                  </p>
+            {testimonials.map((testimoni, idx) => (
+              <SwiperSlide key={idx}>
+                <div className="relative px-[30px] py-[60px] rounded-md shadow-xl text-center">
                   <div>
-                    <h3 className="text-xl font-semibold mb-1">Mike Tyson</h3>
-                    <h4 className="text-md font-medium text-slate-500">
-                      CEO, RT
-                    </h4>
+                    <div className="flex justify-center items-center gap-1 text-orange-500">
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                      <FaStar />
+                    </div>
+                    <p className="my-[28px] w-[80%] mx-auto">
+                      {testimoni.testimoni}
+                    </p>
+                    <div>
+                      <h3 className="text-xl font-semibold mb-1">
+                        {testimoni.name}
+                      </h3>
+                      <h4 className="text-md font-medium text-slate-500">
+                        {testimoni.occupation}
+                      </h4>
+                    </div>
                   </div>
-                </div>
-                <div className="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                  <img className="w-[80px] h-[80px] rounded-full shadow-xl" src={userLogo} alt="" />
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative px-[30px] py-[60px] rounded-md shadow-xl text-center">
-                <div>
-                  <div className="flex justify-center items-center gap-1 text-orange-500">
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
+                  <div className="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
+                    <img
+                      className="w-[80px] h-[80px] rounded-full shadow-xl"
+                      src={userLogo}
+                      alt=""
+                    />
                   </div>
-                  <p className="my-[28px] w-[80%] mx-auto">
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere pariatur ratione magnam tempore, similique in
-                    exercitationem."
-                  </p>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-1">Mike Tyson</h3>
-                    <h4 className="text-md font-medium text-slate-500">
-                      CEO, RT
-                    </h4>
-                  </div>
+                  <span className="absolute right-[30px] bottom-[30px] text-6xl text-slate-200">
+                    <FaQuoteRight />
+                  </span>
                 </div>
-                <div className="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                  <img className="w-[80px] h-[80px] rounded-full shadow-xl" src={userLogo} alt="" />
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative px-[30px] py-[60px] rounded-md shadow-xl text-center">
-                <div>
-                  <div className="flex justify-center items-center gap-1 text-orange-500">
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                  </div>
-                  <p className="my-[28px] w-[80%] mx-auto">
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere pariatur ratione magnam tempore, similique in
-                    exercitationem."
-                  </p>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-1">Mike Tyson</h3>
-                    <h4 className="text-md font-medium text-slate-500">
-                      CEO, RT
-                    </h4>
-                  </div>
-                </div>
-                <div className="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                  <img className="w-[80px] h-[80px] rounded-full shadow-xl" src={userLogo} alt="" />
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="relative px-[30px] py-[60px] rounded-md shadow-xl text-center">
-                <div>
-                  <div className="flex justify-center items-center gap-1 text-orange-500">
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                    <FaStar />
-                  </div>
-                  <p className="my-[28px] w-[80%] mx-auto">
-                    "Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Facere pariatur ratione magnam tempore, similique in
-                    exercitationem."
-                  </p>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-1">Mike Tyson</h3>
-                    <h4 className="text-md font-medium text-slate-500">
-                      CEO, RT
-                    </h4>
-                  </div>
-                </div>
-                <div className="absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%]">
-                  <img className="w-[80px] h-[80px] rounded-full shadow-xl" src={userLogo} alt="" />
-                </div>
-              </div>
-            </SwiperSlide>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
+      <img
+        className="absolute top-0 right-0 translate-x-[30%] translate-y-[30%] z-[-1]"
+        src={figureLogo}
+        alt=""
+      />
     </section>
   );
 };

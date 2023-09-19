@@ -1,9 +1,11 @@
-import React from 'react'
-
+import React from "react";
+import SectionHeader from "../../components/SectionHeader";
 const AboutUs = () => {
   return (
-    <div>AboutUs</div>
-  )
-}
+    <section>
+      <SectionHeader title={"About Us"}/>
+    </section>
+  );
+};
 
-export default AboutUs
+export default AboutUs;
