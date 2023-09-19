@@ -20,6 +20,10 @@ width: 20px;
 border-radius: 5px;
 }
 
+.brand-slider .swiper-slide{
+  margin: 0 ;
+}
+
 
 @media only screen and (max-width:570px) {
   .swiper-slide{

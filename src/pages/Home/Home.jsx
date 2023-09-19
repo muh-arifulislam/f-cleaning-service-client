@@ -7,6 +7,8 @@ import OurWorkingExperts from "./OurWorkingExperts";
 import image2 from "../../assets/images/section-bg15.jpg";
 import WhyChooseUs from "./WhyChooseUs";
 import WorkingProcess from "./WorkingProcess";
+import SponsorSlider from "./SponsorSlider";
+import TestimoniSlider from "./TestimoniSlider";
 const Home = () => {
   return (
     <div>
@@ -54,6 +56,8 @@ const Home = () => {
       <WorkingProcess/>
       <ServiceSlider />
       <OurWorkingExperts />
+      <TestimoniSlider/>
+      <SponsorSlider/>
     </div>
   );
 };
