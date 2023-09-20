@@ -7,7 +7,7 @@ const FaqPage = () => {
     <section className="">
       <SectionHeader title={"Faq Page"} />
       <div className="max-w-[1200px] mx-auto py-[120px]">
-        <div className="grid grid-cols-3 gap-5">
+        <div className="grid lg:md:grid-cols-3 grid-cols-1 lg:md:gap-x-5 gap-0 gap-y-5 mx-4">
           <div className="col-span-2">
             <Accordion
               title="Section 1"

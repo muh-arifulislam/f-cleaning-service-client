@@ -5,6 +5,7 @@ import AboutUs from "../pages/AboutUs/AboutUs";
 import Contact from "../pages/Contact/Contact";
 import Services from "../pages/Services/Services";
 import FaqPage from "../pages/FaqPage/FaqPage";
+import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 
 const routes = createBrowserRouter([
   {
@@ -32,6 +33,7 @@ const routes = createBrowserRouter([
         element: <FaqPage />,
       },
     ],
+    errorElement: <NotFoundPage />,
   },
 ]);
 
