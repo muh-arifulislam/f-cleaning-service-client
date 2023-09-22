@@ -1,5 +1,5 @@
-import React from "react";
-import MemberCard from "../../components/MemberCard";
+import React from 'react'
+import MemberCard from "../components/MemberCard";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,23 +11,13 @@ import "./styles.css";
 
 // import required modules
 import { Pagination } from "swiper/modules";
-const OurWorkingExperts = () => {
-  let slidePerView = 3;
+const ExpertSlider = () => {
+    let slidePerView = 3;
   if (window.screen.availWidth < 570) {
     slidePerView = 1;
   }
   return (
-    <section className="py-[80px] ">
-      <div className="max-w-[1200px] mx-auto">
-        <div className="text-center mb-5">
-          <h2 className="text-4xl font-semibold mb-5">Our Working Experts</h2>
-          <p className="text-lg w-[60%] mx-auto">
-            Perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            dol oremque laudantium, totam remeaque ipsa.
-          </p>
-        </div>
-        <div className="">
-          <Swiper
+    <Swiper
             slidesPerView={slidePerView}
             spaceBetween={30}
             pagination={{
@@ -52,10 +42,7 @@ const OurWorkingExperts = () => {
               <MemberCard />
             </SwiperSlide>
           </Swiper>
-        </div>
-      </div>
-    </section>
-  );
-};
+  )
+}
 
-export default OurWorkingExperts;
+export default ExpertSlider

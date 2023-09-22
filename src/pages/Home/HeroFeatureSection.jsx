@@ -2,18 +2,18 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 import image from "../../assets/images/about14.jpg";
 import Button from "../../components/Button";
-const TopFeature = () => {
+const HeroFeatureSection = () => {
   return (
-    <section className="max-w-[1200px] mx-auto pt-[80px]">
-      <div className="flex lg:flex-row flex-col items-center">
-        <div className="relative p-[10px]">
+    <section className="max-w-[1200px] mx-auto pt-[60px] pb-10 px-4">
+      <div className="flex lg:md:flex-row flex-col gap-5 items-center">
+        <div className="relative">
           <img src={image} className="max-w-full" alt="" />
         </div>
-        <div className="lg:w-[40%] w-full p-[10px]">
-          <h4 className=" text-4xl font-bold leading-[1.3] mb-5 text-[#14287b]">
-            Making Your House
+        <div className="lg:w-[40%] w-full">
+          <h4 className="rtin-title">
+            <span className="font-semibold">Making Your House</span>
             <br />
-            <span className="font-normal">As Good As New</span>
+            <span className="font-light">As Good As New</span>
           </h4>
 
           <p className="text-lg mb-5">
@@ -75,4 +75,4 @@ const TopFeature = () => {
   );
 };
 
-export default TopFeature;
+export default HeroFeatureSection;

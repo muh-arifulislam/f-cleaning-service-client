@@ -4,9 +4,9 @@ import image from "../../assets/images/about13.jpg";
 import personImage from "../../assets/images/figure9.png";
 import { GrPlayFill } from "react-icons/gr";
 import { BsCheckCircle } from "react-icons/bs";
-import OurWorkingExperts from "../Home/OurWorkingExperts";
-import SponsorSlider from "../Home/SponsorSlider";
-import WorkingProcess from "../Home/WorkingProcess";
+import ExpertsSection from "../Home/ExpertsSection";
+import SponsorSlider from "../../components/SponsorSlider";
+import WorkingProcessSection from "../Home/WorkingProcessSection";
 import Button from "../../components/Button";
 const AboutUs = () => {
   return (
@@ -109,10 +109,10 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="bg-blue-400 ">
-        <OurWorkingExperts />
+        <ExpertsSection />
       </div>
       <div>
-        <WorkingProcess />
+        <WorkingProcessSection />
       </div>
       <div className="bg-blue-400 py-[40px] px-4">
         <div className="max-w-[1200px] mx-auto grid lg:md:grid-cols-2 grid-cols-1 gap-y-5">

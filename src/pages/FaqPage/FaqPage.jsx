@@ -1,6 +1,6 @@
 import React from "react";
 import SectionHeader from "../../components/SectionHeader";
-import Accordion from "../../components/Accordian";
+import Accordion from "../../components/Accordion";
 import SentMessageForm from "../../components/SentMessageForm";
 const FaqPage = () => {
   return (

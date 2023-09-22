@@ -6,6 +6,7 @@ import Contact from "../pages/Contact/Contact";
 import Services from "../pages/Services/Services";
 import FaqPage from "../pages/FaqPage/FaqPage";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
+import SingleService from "../pages/SingleService/SingleService";
 
 const routes = createBrowserRouter([
   {
@@ -27,6 +28,10 @@ const routes = createBrowserRouter([
       {
         path: "services",
         element: <Services />,
+      },
+      {
+        path: "services/:id",
+        element: <SingleService />,
       },
       {
         path: "faq-page",
