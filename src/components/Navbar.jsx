@@ -1,12 +1,42 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/images/logo.png";
 import { FiPhoneCall } from "react-icons/fi";
 const Navbar = () => {
+  const navigate = useNavigate();
   const [toggleMenu, setToggleMenu] = useState(false);
+  const [showNavbar, setShowNavbar] = useState(true);
+  const [prevScrollY, setPrevScrollY] = useState(0);
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY < 150) {
+        setShowNavbar(true);
+      } else if (currentScrollY < prevScrollY && currentScrollY > 150) {
+        // Scrolling up
+        setShowNavbar(true);
+      } else {
+        // Scrolling down
+        setShowNavbar(false);
+      }
 
+      // Update the previous scroll position
+      setPrevScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    // Cleanup the event listener on unmount
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [prevScrollY]);
   return (
-    <div className="sticky top-0 z-10">
+    <div
+      className={`sticky z-10 transition-all ease-in-out duration-500  ${
+        showNavbar ? "top-0" : "top-[-100%]"
+      }`}
+    >
       <nav className="bg-white dark:bg-gray-900 z-20 border-b border-gray-200 dark:border-gray-600 ">
         <div className="max-w-[1200px] flex flex-wrap items-center justify-between mx-auto py-4 lg:md:px-0 px-4">
           <a href="/" className="flex items-center">
@@ -16,6 +46,14 @@ const Navbar = () => {
               alt="Flowbite Logo"
             />
           </a>
+          <div className="lg:md:hidden block">
+            <button
+              onClick={() => navigate("/book-service")}
+              class="text-slate-600 bg-tertiary focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center "
+            >
+              Get a Quote
+            </button>
+          </div>
           <div className="flex md:order-2">
             <div className="lg:md:flex hidden gap-4 items-center justify-center">
               <span className="text-3xl">
