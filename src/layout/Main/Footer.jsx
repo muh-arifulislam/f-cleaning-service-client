@@ -23,7 +23,7 @@ const Footer = () => {
                 alt=""
               />
             </div>
-            <p className="mb-5">
+            <p className="mb-5 text-slate-400">
               There are many variations of passages of Lorem Ipsum available,
               There are many variations of passages.
             </p>
@@ -112,7 +112,7 @@ const Footer = () => {
               </li>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/services"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
@@ -123,7 +123,7 @@ const Footer = () => {
               </li>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/contact-us"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
@@ -134,7 +134,7 @@ const Footer = () => {
               </li>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/about-us"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
@@ -145,7 +145,7 @@ const Footer = () => {
               </li>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/faq-page"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
@@ -205,8 +205,16 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <img className="absolute top-0 left-0 z-[-1] opacity-40" src={image2} alt="" />
-      <img className="absolute bottom-0 right-0 z-[-1] opacity-40" src={image3} alt="" />
+      <img
+        className="absolute top-0 left-0 z-[-1] opacity-40"
+        src={image2}
+        alt=""
+      />
+      <img
+        className="absolute bottom-0 right-0 z-[-1] opacity-40"
+        src={image3}
+        alt=""
+      />
     </footer>
   );
 };

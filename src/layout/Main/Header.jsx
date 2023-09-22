@@ -2,6 +2,7 @@ import React from "react";
 import { FaRegClock, FaCalendar } from "react-icons/fa";
 import SocialLinksButton from "../../components/SocialLinksButton";
 import Navbar from "../../components/Navbar";
+import { Link } from "react-router-dom";
 const Header = () => {
   return (
     <>
@@ -19,12 +20,14 @@ const Header = () => {
             </div>
           </div>
           <div className="lg:flex hidden">
-            <button className="bg-yellow-300 px-8 font-bold text-slate-600 flex items-center gap-x-3">
+            <Link
+            to={"/book-service"}
+            className="bg-yellow-300 px-8 font-bold text-slate-600 flex items-center gap-x-3">
               <span>
                 <FaCalendar />
               </span>
               <span>Book Service</span>
-            </button>
+            </Link>
           </div>
         </div>
       </div>

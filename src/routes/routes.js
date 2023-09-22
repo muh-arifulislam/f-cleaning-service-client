@@ -7,6 +7,7 @@ import Services from "../pages/Services/Services";
 import FaqPage from "../pages/FaqPage/FaqPage";
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import SingleService from "../pages/SingleService/SingleService";
+import BookService from "../pages/BookService/BookService";
 
 const routes = createBrowserRouter([
   {
@@ -36,6 +37,10 @@ const routes = createBrowserRouter([
       {
         path: "faq-page",
         element: <FaqPage />,
+      },
+      {
+        path: "book-service",
+        element: <BookService />,
       },
     ],
     errorElement: <NotFoundPage />,

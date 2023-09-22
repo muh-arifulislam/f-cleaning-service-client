@@ -9,7 +9,7 @@ const Navbar = () => {
     <div className="sticky top-0 z-10">
       <nav className="bg-white dark:bg-gray-900 z-20 border-b border-gray-200 dark:border-gray-600 ">
         <div className="max-w-[1200px] flex flex-wrap items-center justify-between mx-auto py-4 lg:md:px-0 px-4">
-          <a href="https://flowbite.com/" className="flex items-center">
+          <a href="/" className="flex items-center">
             <img
               src={logo}
               className="lg:md:max-w-[190px] max-w-[120px]"

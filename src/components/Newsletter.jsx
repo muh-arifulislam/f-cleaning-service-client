@@ -23,7 +23,7 @@ const Newsletter = () => {
             <input
               className="w-full rounded py-4 bg-amber-400 text-lg font-medium cursor-pointer"
               type="button"
-              value="Book Now"
+              value="Subscribe"
             />
           </div>
         </form>
