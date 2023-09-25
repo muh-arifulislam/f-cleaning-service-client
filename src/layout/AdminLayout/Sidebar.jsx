@@ -197,7 +197,7 @@ const Sidebar = () => {
               <li className="items-center">
                 <Link
                   className="text-blueGray-700 hover:text-blueGray-500 text-xs uppercase py-3 font-bold block"
-                  to="/auth/login"
+                  to="user"
                 >
                   <i className="fas fa-fingerprint text-blueGray-400 mr-2 text-sm"></i>{" "}
                   User
@@ -215,7 +215,7 @@ const Sidebar = () => {
             <ul className="md:flex-col md:min-w-full flex flex-col list-none md:mb-4">
               <li className="inline-flex">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/colors/notus"
+                  href="https://github.com/muh-arifulislam?tab=repositories"
                   target="_blank"
                   rel="noreferrer"
                   className="text-blueGray-700 hover:text-blueGray-500 text-sm block mb-4 no-underline font-semibold"

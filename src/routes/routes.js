@@ -10,6 +10,7 @@ import FaqPage from "../pages/User/FaqPage/FaqPage";
 import NotFoundPage from "../pages/User/NotFoundPage/NotFoundPage";
 import SingleService from "../pages/User/SingleService/SingleService";
 import BookService from "../pages/User/BookService/BookService";
+import Showcase from "../pages/User/Showcase/Showcase";
 
 // Admin pages
 import AdminLayout from "../layout/AdminLayout/AdminLayout";
@@ -17,6 +18,8 @@ import Dashboard from "../pages/Admin/Dashboard/Dashboard";
 import AdminServices from "../pages/Admin/AdminServices/AdminServices.jsx";
 import Customers from "../pages/Admin/Customers/Customers";
 import Reviews from "../pages/Admin/Reviews/Reviews";
+import AdminShowcase from "../pages/Admin/AdminShowcase/AdminShowcase";
+import Users from "../pages/Admin/Users/Users";
 
 const routes = createBrowserRouter([
   {
@@ -42,6 +45,10 @@ const routes = createBrowserRouter([
       {
         path: "services/:id",
         element: <SingleService />,
+      },
+      {
+        path: "showcase",
+        element: <Showcase />,
       },
       {
         path: "faq-page",
@@ -75,8 +82,12 @@ const routes = createBrowserRouter([
         element: <Reviews />,
       },
       {
-        path: "service",
-        element: <AdminServices />,
+        path: "showcase",
+        element: <AdminShowcase />,
+      },
+      {
+        path: "user",
+        element: <Users />,
       },
     ],
   },
