@@ -7,7 +7,7 @@ import icon from "../../assets/icons/spray.svg";
 
 const ServiceCardRegular = () => {
   return (
-    <div className="px-[30px] py-[60px] rounded-md shadow-xl text-center select-none ">
+    <div className="px-[30px] py-[60px] rounded-md shadow-xl text-center select-none bg-white">
       <h1 className="text-2xl font-semibold mb-[28px]">Office Cleaning</h1>
       <div className="bg-blue-700 w-[125px] h-[125px] flex justify-center items-center rounded-full mx-auto">
         <img className="w-[48px] h-[48px]" src={icon} alt="" />

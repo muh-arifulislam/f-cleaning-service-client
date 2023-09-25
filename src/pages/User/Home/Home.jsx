@@ -8,6 +8,7 @@ import TestimonialSection from "./TestimonialSection";
 import SponsorSection from "./SponsorSection";
 import BannerSection from "./BannerSection";
 import TopBannerSection from "./TopBannerSection";
+import ShowcaseSection from "./ShowcaseSection";
 const Home = () => {
   return (
     <div>
@@ -17,6 +18,7 @@ const Home = () => {
       <BannerSection />
       <WhyChooseUsSection />
       <WorkingProcessSection />
+      <ShowcaseSection />
       <ExpertsSection />
       <TestimonialSection />
       <SponsorSection />
