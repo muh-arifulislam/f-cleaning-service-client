@@ -1,25 +1,18 @@
 import { createBrowserRouter } from "react-router-dom";
 
-// User pages
-import Main from "../layout/UserLayout/Main";
-import Home from "../pages/User/Home/Home";
-import AboutUs from "../pages/User/AboutUs/AboutUs";
-import Contact from "../pages/User/Contact/Contact";
-import Services from "../pages/User/Services/Services";
-import FaqPage from "../pages/User/FaqPage/FaqPage";
-import NotFoundPage from "../pages/User/NotFoundPage/NotFoundPage";
-import SingleService from "../pages/User/SingleService/SingleService";
-import BookService from "../pages/User/BookService/BookService";
-import Showcase from "../pages/User/Showcase/Showcase";
+// view layout
+import Main from "../layout/Main/Main";
 
-// Admin pages
-import AdminLayout from "../layout/AdminLayout/AdminLayout";
-import Dashboard from "../pages/Admin/Dashboard/Dashboard";
-import AdminServices from "../pages/Admin/AdminServices/AdminServices.jsx";
-import Customers from "../pages/Admin/Customers/Customers";
-import Reviews from "../pages/Admin/Reviews/Reviews";
-import AdminShowcase from "../pages/Admin/AdminShowcase/AdminShowcase";
-import Users from "../pages/Admin/Users/Users";
+// view pages
+import Home from "../pages/Home/Home";
+import AboutUs from "../pages/AboutUs/AboutUs";
+import Contact from "../pages/Contact/Contact";
+import Services from "../pages/Services/Services";
+import FaqPage from "../pages/FaqPage/FaqPage";
+import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
+import SingleService from "../pages/SingleService/SingleService";
+import BookService from "../pages/BookService/BookService";
+import Showcase from "../pages/Showcase/Showcase";
 
 const routes = createBrowserRouter([
   {
@@ -60,36 +53,6 @@ const routes = createBrowserRouter([
       },
     ],
     errorElement: <NotFoundPage />,
-  },
-  {
-    path: "/admin",
-    element: <AdminLayout />,
-    children: [
-      {
-        index: true,
-        element: <Dashboard />,
-      },
-      {
-        path: "service",
-        element: <AdminServices />,
-      },
-      {
-        path: "customer",
-        element: <Customers />,
-      },
-      {
-        path: "review",
-        element: <Reviews />,
-      },
-      {
-        path: "showcase",
-        element: <AdminShowcase />,
-      },
-      {
-        path: "user",
-        element: <Users />,
-      },
-    ],
   },
 ]);
 

@@ -1,0 +1,5 @@
+export const FETCH_SERVICES = "FETCH_SERVICES";
+export const FETCH_REVIEWS = "FETCH_REVIEWS";
+export const FETCH_SHOWCASES = "FETCH_SHOWCASES";
+export const SET_LOADING = "SET_LOADING";
+export const SET_ERROR = "SET_ERROR";

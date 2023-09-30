@@ -1,12 +1,12 @@
 import React from "react";
 import { FaQuoteRight, FaStar } from "react-icons/fa";
 
-// images 
+// images
 import userLogo from "../../assets/icons/user.png";
 
-const TestimonialCard = ({ testimoni }) => {
+const TestimonialCard = ({ review }) => {
   return (
-    <div className="relative px-[30px] py-[60px] rounded-md shadow-xl text-center">
+    <div className="relative w-full px-[30px] py-[60px] rounded-md shadow-xl text-center">
       <div>
         <div className="flex justify-center items-center gap-1 text-orange-500">
           <FaStar />
@@ -15,11 +15,11 @@ const TestimonialCard = ({ testimoni }) => {
           <FaStar />
           <FaStar />
         </div>
-        <p className="my-[28px] w-[80%] mx-auto">{testimoni.testimoni}</p>
+        <p className="my-[28px] w-[80%] mx-auto">{review.testimonial}</p>
         <div>
-          <h3 className="text-xl font-semibold mb-1">{testimoni.name}</h3>
+          <h3 className="text-xl font-semibold mb-1">{review.name}</h3>
           <h4 className="text-md font-medium text-slate-500">
-            {testimoni.occupation}
+            {review.designation}
           </h4>
         </div>
       </div>

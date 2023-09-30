@@ -13,8 +13,11 @@ import { Pagination } from "swiper/modules";
 
 // components
 import CardShowcaseItem from "./CardShowcaseItem";
+import { useGlobalState } from "../../state/GlobalStateProvider";
 
 const ShowcaseSlider = () => {
+  const { showcases } = useGlobalState();
+
   let slidePerView = 4;
   if (window.screen.availWidth < 570) {
     slidePerView = 1;
@@ -30,24 +33,11 @@ const ShowcaseSlider = () => {
       modules={[Pagination]}
       className="mySwiper services-slider"
     >
-      <SwiperSlide>
-        <CardShowcaseItem />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardShowcaseItem />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardShowcaseItem />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardShowcaseItem />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardShowcaseItem />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardShowcaseItem />
-      </SwiperSlide>
+      {showcases?.data?.map((showcase) => (
+        <SwiperSlide key={showcase?._id}>
+          <CardShowcaseItem />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };

@@ -14,139 +14,14 @@ import { Pagination } from "swiper/modules";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { FaQuoteLeft, FaQuoteRight, FaStar } from "react-icons/fa";
 import TestimonialCard from "./TestimonialCard";
+import { useGlobalState } from "../../state/GlobalStateProvider";
 const TestimonialSlider = () => {
-  const [testimonials, setTestimonials] = useState([
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-    {
-      name: "Md. Ariful Islam",
-      occupation: "CEO, RT",
-      ratings: 4,
-      testimoni:
-        '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere pariatur ratione magnam tempore, similique in exercitationem."',
-    },
-  ]);
+  const { reviews } = useGlobalState();
   let slidePerView = 2;
   if (window.screen.availWidth < 570) {
     slidePerView = 1;
   }
+
   return (
     <Swiper
       slidesPerView={slidePerView}
@@ -158,9 +33,9 @@ const TestimonialSlider = () => {
       modules={[Pagination]}
       className="mySwiper testimonials-slider"
     >
-      {testimonials.map((testimoni, idx) => (
-        <SwiperSlide key={idx}>
-          <TestimonialCard testimoni={testimoni} />
+      {reviews?.data?.map((review) => (
+        <SwiperSlide key={review._id}>
+          <TestimonialCard review={review} />
         </SwiperSlide>
       ))}
     </Swiper>

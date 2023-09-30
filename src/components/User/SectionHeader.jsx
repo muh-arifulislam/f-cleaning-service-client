@@ -8,7 +8,6 @@ import bgImage from "../../assets/images/banner.jpg";
 const SectionHeader = ({ title }) => {
   const { pathname } = useLocation();
   const paths = pathname.split("/").filter((item) => item !== "");
-  const lastPath = paths[paths.length - 1];
   paths.pop();
   return (
     <div
@@ -56,7 +55,7 @@ const SectionHeader = ({ title }) => {
               </span>
             ))}
           </span>
-          <span className="text-lg font-medium text-amber-400">{lastPath}</span>
+          <span className="text-lg font-medium text-amber-400">{title}</span>
         </div>
       </div>
     </div>

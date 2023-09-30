@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import ServiceCardRegular from "./ServiceCardRegular";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,15 +7,19 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 
-import "./styles.css"
+import "./styles.css";
 
 // import required modules
 import { Pagination } from "swiper/modules";
+import { useGlobalState } from "../../state/GlobalStateProvider";
 const ServiceSlider = () => {
+  const { services } = useGlobalState();
+
   let slidePerView = 3;
   if (window.screen.availWidth < 570) {
     slidePerView = 1;
   }
+
   return (
     <Swiper
       slidesPerView={slidePerView}
@@ -27,24 +31,11 @@ const ServiceSlider = () => {
       modules={[Pagination]}
       className="mySwiper services-slider"
     >
-      <SwiperSlide>
-        <ServiceCardRegular />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ServiceCardRegular />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ServiceCardRegular />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ServiceCardRegular />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ServiceCardRegular />
-      </SwiperSlide>
-      <SwiperSlide>
-        <ServiceCardRegular />
-      </SwiperSlide>
+      {services?.data.map((service) => (
+        <SwiperSlide key={service._id}>
+          <ServiceCardRegular service={service} />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
