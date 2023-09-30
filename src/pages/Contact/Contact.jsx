@@ -3,8 +3,8 @@ import { BsFillTelephoneFill, BsEnvelope } from "react-icons/bs";
 import { FaLocationDot } from "react-icons/fa6";
 
 // components
-import SectionHeader from "../../components/User/SectionHeader";
-import SentMessageForm from "../../components/User/SentMessageForm";
+import SectionHeader from "../../components/SectionHeader";
+import FormSentMessage from "../../components/Forms/FormSentMessage";
 
 const Contact = () => {
   return (
@@ -79,7 +79,7 @@ const Contact = () => {
             </div>
           </div>
           <div className="">
-            <SentMessageForm />
+            <FormSentMessage />
           </div>
         </div>
       </div>

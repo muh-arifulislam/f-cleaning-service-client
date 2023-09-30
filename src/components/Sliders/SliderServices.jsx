@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import ServiceCardRegular from "./ServiceCardRegular";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -12,7 +11,10 @@ import "./styles.css";
 // import required modules
 import { Pagination } from "swiper/modules";
 import { useGlobalState } from "../../state/GlobalStateProvider";
-const ServiceSlider = () => {
+
+import CardService from "../Cards/CardService";
+
+const SliderServices = () => {
   const { services } = useGlobalState();
 
   let slidePerView = 3;
@@ -33,11 +35,11 @@ const ServiceSlider = () => {
     >
       {services?.data.map((service) => (
         <SwiperSlide key={service._id}>
-          <ServiceCardRegular service={service} />
+          <CardService service={service} />
         </SwiperSlide>
       ))}
     </Swiper>
   );
 };
 
-export default ServiceSlider;
+export default SliderServices;

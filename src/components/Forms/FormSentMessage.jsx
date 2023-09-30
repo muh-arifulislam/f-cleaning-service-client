@@ -1,6 +1,6 @@
 import React from "react";
 
-const SentMessageForm = () => {
+const FormSentMessage = () => {
   return (
     <form action="" className="lg:md:p-[40px] p-5 border">
       <div className="relative pb-4 mb-8">
@@ -53,4 +53,4 @@ const SentMessageForm = () => {
   );
 };
 
-export default SentMessageForm;
+export default FormSentMessage;

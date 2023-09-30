@@ -1,9 +1,9 @@
 import React from "react";
 
 // components
-import SectionHeader from "../../components/User/SectionHeader";
-import Accordion from "../../components/User/Accordion";
-import SentMessageForm from "../../components/User/SentMessageForm";
+import SectionHeader from "../../components/SectionHeader";
+import Accordion from "../../components/Accordions/Accordion";
+import FormSentMessage from "../../components/Forms/FormSentMessage";
 
 const FaqPage = () => {
   return (
@@ -39,7 +39,7 @@ const FaqPage = () => {
             />
           </div>
           <div className="">
-            <SentMessageForm />
+            <FormSentMessage />
           </div>
         </div>
       </div>

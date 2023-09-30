@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const WorkingProcessCard = ({ IconComponent, title, content }) => {
+const CardWorkingProcess = ({ IconComponent, title, content }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -26,4 +26,4 @@ const WorkingProcessCard = ({ IconComponent, title, content }) => {
   );
 };
 
-export default WorkingProcessCard;
+export default CardWorkingProcess;

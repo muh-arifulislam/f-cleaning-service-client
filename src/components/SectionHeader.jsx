@@ -3,7 +3,7 @@ import { useLocation } from "react-router-dom";
 import { BiChevronsRight } from "react-icons/bi";
 
 // images
-import bgImage from "../../assets/images/banner.jpg";
+import bgImage from "../assets/images/banner.jpg";
 
 const SectionHeader = ({ title }) => {
   const { pathname } = useLocation();

@@ -5,7 +5,7 @@ import { BsFillArrowRightCircleFill } from "react-icons/bs";
 // images
 import icon from "../../assets/icons/spray.svg";
 
-const ServiceCardRegular = ({ service }) => {
+const CardService = ({ service }) => {
   return (
     <div className="px-[30px] py-[60px] rounded-md shadow-xl text-center select-none bg-white">
       <h1 className="text-2xl font-semibold mb-[28px]">{service?.title}</h1>
@@ -26,4 +26,4 @@ const ServiceCardRegular = ({ service }) => {
   );
 };
 
-export default ServiceCardRegular;
+export default CardService;

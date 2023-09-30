@@ -2,7 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
-const BookServiceForm = () => {
+const FormBookService = () => {
   const {
     register,
     handleSubmit,
@@ -95,4 +95,4 @@ const BookServiceForm = () => {
   );
 };
 
-export default BookServiceForm;
+export default FormBookService;

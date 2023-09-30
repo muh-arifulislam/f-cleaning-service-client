@@ -3,11 +3,11 @@ import { Link, useParams } from "react-router-dom";
 import { BsChevronRight, BsCheckCircle } from "react-icons/bs";
 
 // components
-import SectionHeader from "../../components/User/SectionHeader";
-import BookServiceForm from "../../components/User/BookServiceForm";
-import Hero from "../../components/User/Hero";
-import Accordion from "../../components/User/Accordion";
-import Newsletter from "../../components/User/Newsletter";
+import SectionHeader from "../../components/SectionHeader";
+import FormBookService from "../../components/Forms/FormBookService";
+import Hero from "../../components/Hero/Hero";
+import Accordion from "../../components/Accordions/Accordion";
+import Newsletter from "../../components/Newsletter";
 
 // images
 import image from "../../assets/images/house5.jpg";
@@ -23,7 +23,7 @@ const SingleService = () => {
         <div className="grid lg:md:grid-cols-3 grid-cols-1 lg:md:gap-x-8 gap-0 gap-y-8 mx-4">
           <div className="">
             <div className="mb-8">
-              <BookServiceForm />
+              <FormBookService />
             </div>
             <div className="mb-8 lg:md:block hidden">
               <div className="lg:md:p-[40px] p-5 border">

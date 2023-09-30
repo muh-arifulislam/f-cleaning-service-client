@@ -4,7 +4,7 @@ import { FaQuoteRight, FaStar } from "react-icons/fa";
 // images
 import userLogo from "../../assets/icons/user.png";
 
-const TestimonialCard = ({ review }) => {
+const CardReview = ({ review }) => {
   return (
     <div className="relative w-full px-[30px] py-[60px] rounded-md shadow-xl text-center">
       <div>
@@ -37,4 +37,4 @@ const TestimonialCard = ({ review }) => {
   );
 };
 
-export default TestimonialCard;
+export default CardReview;

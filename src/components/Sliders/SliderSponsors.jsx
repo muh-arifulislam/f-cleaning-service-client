@@ -11,7 +11,7 @@ import "./styles.css";
 import { Pagination } from "swiper/modules";
 
 // componets
-import SponsorCard from "./SponsorCard";
+import CardSponsor from "../Cards/CardSponsor";
 
 // images
 import brandLogo1 from "../../assets/icons/brand1.png";
@@ -19,7 +19,7 @@ import brandLogo2 from "../../assets/icons/brand2-1.png";
 import brandLogo3 from "../../assets/icons/brand3-1.png";
 import brandLogo4 from "../../assets/icons/brand5-1.png";
 
-const SponsorSlider = () => {
+const SliderSponsors = () => {
   let slidePerView = 4;
   if (window.screen.availWidth < 570) {
     slidePerView = 1;
@@ -34,19 +34,19 @@ const SponsorSlider = () => {
       className="mySwiper brands-slider"
     >
       <SwiperSlide>
-        <SponsorCard logo={brandLogo1} />
+        <CardSponsor logo={brandLogo1} />
       </SwiperSlide>
       <SwiperSlide>
-        <SponsorCard logo={brandLogo2} />
+        <CardSponsor logo={brandLogo2} />
       </SwiperSlide>
       <SwiperSlide>
-        <SponsorCard logo={brandLogo3} />
+        <CardSponsor logo={brandLogo3} />
       </SwiperSlide>
       <SwiperSlide>
-        <SponsorCard logo={brandLogo4} />
+        <CardSponsor logo={brandLogo4} />
       </SwiperSlide>
     </Swiper>
   );
 };
 
-export default SponsorSlider;
+export default SliderSponsors;

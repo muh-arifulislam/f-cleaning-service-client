@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 
 // components
-import TestimonialSlider from "../../components/User/TestimonialSlider";
+import SliderReviews from "../../components/Sliders/SliderReviews";
 
 // images 
 import figureLogo from "../../assets/icons/figure18.png";
@@ -19,7 +19,7 @@ const TestimonialSection = () => {
           </h4>
         </div>
         <div className="">
-          <TestimonialSlider />
+          <SliderReviews />
         </div>
       </div>
       <img

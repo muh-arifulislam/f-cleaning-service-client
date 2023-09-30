@@ -2,7 +2,7 @@ import React from "react";
 import { BsCalendarCheck } from "react-icons/bs";
 
 // components
-import WorkingProcessCard from "../../components/User/WorkingProcessCard";
+import CardWorkingProcess from "../../components/Cards/CardWorkingProcess";
 
 import image from "../../assets/images/section-bg16.jpg";
 
@@ -23,17 +23,17 @@ const WorkingProcessSection = () => {
             backgroundPosition: "43px 20px",
           }}
         >
-          <WorkingProcessCard
+          <CardWorkingProcess
             IconComponent={BsCalendarCheck}
             title="Book Online form"
             content="Ahen an unknown printer took a galley type and scrambled nknown printer."
           />
-          <WorkingProcessCard
+          <CardWorkingProcess
             IconComponent={BsCalendarCheck}
             title="Book Online form"
             content="Ahen an unknown printer took a galley type and scrambled nknown printer."
           />
-          <WorkingProcessCard
+          <CardWorkingProcess
             IconComponent={BsCalendarCheck}
             title="Book Online form"
             content="Ahen an unknown printer took a galley type and scrambled nknown printer."

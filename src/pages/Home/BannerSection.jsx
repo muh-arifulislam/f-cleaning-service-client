@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import Button from "../../components/User/Button";
+import Button from "../../components/Button/Button";
 
 // images
 import image2 from "../../assets/images/section-bg15.jpg";

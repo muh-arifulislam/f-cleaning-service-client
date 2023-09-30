@@ -1,8 +1,8 @@
 import React from "react";
 
 // componnents
-import SectionHeader from "../../components/User/SectionHeader";
-import ServiceSlider from "../../components/User/ServiceSlider";
+import SectionHeader from "../../components/SectionHeader";
+import SliderServices from "../../components/Sliders/SliderServices";
 
 // images
 import bgImage from "../../assets/images/section-bg14.jpg";
@@ -21,7 +21,7 @@ const Services = () => {
         }}
       >
         <div className="max-w-[1200px] mx-auto">
-          <ServiceSlider />
+          <SliderServices />
         </div>
       </div>
     </section>

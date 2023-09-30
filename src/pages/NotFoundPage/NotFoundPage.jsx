@@ -2,10 +2,10 @@ import React from "react";
 import { useRouteError } from "react-router-dom";
 
 // components
-import SectionHeader from "../../components/User/SectionHeader";
+import SectionHeader from "../../components/SectionHeader";
 import Header from "../../layout/Main/Header";
 import Footer from "../../layout/Main/Footer";
-import Button from "../../components/User/Button";
+import Button from "../../components/Button/Button";
 
 // images
 import image from "../../assets/images/404.png";

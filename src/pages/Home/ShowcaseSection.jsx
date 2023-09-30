@@ -1,5 +1,5 @@
 import React from "react";
-import ShowcaseSlider from "../../components/User/ShowcaseSlider";
+import SliderShowcases from "../../components/Sliders/SliderShowcases";
 
 const ShowcaseSection = () => {
   return (
@@ -23,7 +23,7 @@ const ShowcaseSection = () => {
       </div>
       <div className="max-w-[1300px] mx-auto px-4">
         <div className="-mx-5">
-          <ShowcaseSlider />
+          <SliderShowcases />
         </div>
       </div>
     </section>

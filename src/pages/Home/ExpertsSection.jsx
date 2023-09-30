@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import ExpertSlider from "../../components/User/ExpertSlider";
+import SliderExperts from "../../components/Sliders/SliderExperts";
 
 const ExpertsSection = () => {
   return (
@@ -17,7 +17,7 @@ const ExpertsSection = () => {
           </p>
         </div>
         <div className="lg:md:px-0 px-[6px]">
-          <ExpertSlider />
+          <SliderExperts />
         </div>
       </div>
     </section>

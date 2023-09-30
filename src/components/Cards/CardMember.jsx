@@ -7,13 +7,10 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-// components
-import SocialLinksButton from "./SocialLinksButton";
-
-// images 
+// images
 import image from "../../assets/images/team1-1.png";
 
-const MemberCard = () => {
+const CardMember = () => {
   return (
     <div className="p-[10px] select-none">
       <div className="mb-[30px] bg-slate-100 rounded-full flex items-center justify-center overflow-hidden transition ease-out duration-300 hover:translate-y-2">
@@ -55,4 +52,4 @@ const MemberCard = () => {
   );
 };
 
-export default MemberCard;
+export default CardMember;

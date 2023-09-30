@@ -1,5 +1,4 @@
 import React from "react";
-
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -13,40 +12,34 @@ import "./styles.css";
 import { Pagination } from "swiper/modules";
 
 // components
-import MemberCard from "./MemberCard";
+import CardShowcaseItem from "../Cards/CardShowcaseItem";
+import { useGlobalState } from "../../state/GlobalStateProvider";
 
-const ExpertSlider = () => {
-  let slidePerView = 3;
+const SliderShowcases = () => {
+  const { showcases } = useGlobalState();
+
+  let slidePerView = 4;
   if (window.screen.availWidth < 570) {
     slidePerView = 1;
   }
   return (
     <Swiper
       slidesPerView={slidePerView}
-      spaceBetween={30}
+      spaceBetween={0}
+      loop={true}
       pagination={{
         dynamicBullets: true,
       }}
       modules={[Pagination]}
-      className="mySwiper"
+      className="mySwiper services-slider"
     >
-      <SwiperSlide>
-        <MemberCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <MemberCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <MemberCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <MemberCard />
-      </SwiperSlide>
-      <SwiperSlide>
-        <MemberCard />
-      </SwiperSlide>
+      {showcases?.data?.map((showcase) => (
+        <SwiperSlide key={showcase?._id}>
+          <CardShowcaseItem />
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 };
 
-export default ExpertSlider;
+export default SliderShowcases;

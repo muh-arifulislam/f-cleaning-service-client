@@ -5,9 +5,9 @@ import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 
 // components
-import SectionHeader from "../../components/User/SectionHeader";
-import SentMessageForm from "../../components/User/SentMessageForm";
-import Newsletter from "../../components/User/Newsletter";
+import SectionHeader from "../../components/SectionHeader";
+import FormSentMessage from "../../components/Forms/FormSentMessage";
+import Newsletter from "../../components/Newsletter";
 
 const BookService = () => {
   const {

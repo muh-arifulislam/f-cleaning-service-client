@@ -13,9 +13,12 @@ import "./styles.css";
 import { Pagination } from "swiper/modules";
 import { BsFillArrowRightCircleFill } from "react-icons/bs";
 import { FaQuoteLeft, FaQuoteRight, FaStar } from "react-icons/fa";
-import TestimonialCard from "./TestimonialCard";
 import { useGlobalState } from "../../state/GlobalStateProvider";
-const TestimonialSlider = () => {
+
+// components
+import CardReview from "../Cards/CardReview";
+
+const SliderReviews = () => {
   const { reviews } = useGlobalState();
   let slidePerView = 2;
   if (window.screen.availWidth < 570) {
@@ -35,11 +38,11 @@ const TestimonialSlider = () => {
     >
       {reviews?.data?.map((review) => (
         <SwiperSlide key={review._id}>
-          <TestimonialCard review={review} />
+          <CardReview review={review} />
         </SwiperSlide>
       ))}
     </Swiper>
   );
 };
 
-export default TestimonialSlider;
+export default SliderReviews;

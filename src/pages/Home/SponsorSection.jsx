@@ -1,14 +1,14 @@
 import React from "react";
 
 // components
-import SponsorSlider from "../../components/User/SponsorSlider";
+import SliderSponsors from "../../components/Sliders/SliderSponsors";
 
 const SponsorSection = () => {
   return (
     <section className="">
       <div className="max-w-[1200px] mx-auto">
         <div className="">
-          <SponsorSlider />
+          <SliderSponsors />
         </div>
       </div>
     </section>

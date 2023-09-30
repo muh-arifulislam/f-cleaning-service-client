@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { FaRegClock, FaCalendar } from "react-icons/fa";
 
 // components
-import SocialLinksButton from "../../components/User/SocialLinksButton";
-import Navbar from "../../components/User/Navbar";
+import SocialLinksButton from "../../components/Button/SocialLinksButton";
+import Navbar from "./Navbar";
 
 const Header = () => {
   return (

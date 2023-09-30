@@ -2,7 +2,7 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 
 // components
-import Button from "../../components/User/Button";
+import Button from "../../components/Button/Button";
 
 // images
 import image from "../../assets/images/about14.jpg";

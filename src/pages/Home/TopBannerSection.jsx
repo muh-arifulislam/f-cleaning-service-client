@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import Button from "../../components/User/Button";
+import Button from "../../components/Button/Button";
 
 const TopBannerSection = () => {
   return (

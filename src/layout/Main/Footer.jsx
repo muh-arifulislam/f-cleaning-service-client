@@ -9,7 +9,7 @@ import {
 } from "react-icons/fa";
 
 // components
-import SocialLinksButton from "../../components/User/SocialLinksButton";
+import SocialLinksButton from "../../components/Button/SocialLinksButton";
 
 // images
 import image2 from "../../assets/images/figure1.png";

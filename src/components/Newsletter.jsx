@@ -1,7 +1,7 @@
 import React from "react";
 
 // images
-import icon from "../../assets/icons/newsmail.png";
+import icon from "../assets/icons/newsmail.png";
 
 const Newsletter = () => {
   return (

@@ -1,7 +1,7 @@
 import React from "react";
 
 // components
-import ServicesSlider from "../../components/User/ServiceSlider";
+import SliderServices from "../../components/Sliders/SliderServices";
 
 const ServicesSection = () => {
   return (
@@ -25,7 +25,7 @@ const ServicesSection = () => {
       </div>
       <div className="max-w-[1220px] mx-auto px-5">
         <div className="-mx-5">
-          <ServicesSlider />
+          <SliderServices />
         </div>
       </div>
     </section>

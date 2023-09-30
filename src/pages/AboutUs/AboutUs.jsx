@@ -3,11 +3,12 @@ import { GrPlayFill } from "react-icons/gr";
 import { BsCheckCircle } from "react-icons/bs";
 
 // components
-import SectionHeader from "../../components/User/SectionHeader";
-import SponsorSlider from "../../components/User/SponsorSlider";
-import Button from "../../components/User/Button";
-// import WorkingProcessSection from "../User/Home/WorkingProcessSection";
-// import ExpertsSection from "../Home/ExpertsSection";
+import SectionHeader from "../../components/SectionHeader";
+import SliderSponsors from "../../components/Sliders/SliderSponsors";
+import Button from "../../components/Button/Button";
+
+import WorkingProcessSection from "../Home/WorkingProcessSection";
+import ExpertsSection from "../Home/ExpertsSection";
 
 // images
 import image from "../../assets/images/about13.jpg";
@@ -114,12 +115,10 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="bg-blue-400 ">
-        {/* <ExpertsSection /> */}
-        expert section
+        <ExpertsSection />
       </div>
       <div>
-        {/* <WorkingProcessSection /> */}
-        working process section
+        <WorkingProcessSection />
       </div>
       <div className="bg-blue-400 py-[40px] px-4">
         <div className="max-w-[1200px] mx-auto grid lg:md:grid-cols-2 grid-cols-1 gap-y-5">
@@ -143,7 +142,7 @@ const AboutUs = () => {
         </div>
       </div>
       <div className="max-w-[1200px] mx-auto">
-        <SponsorSlider />
+        <SliderSponsors />
       </div>
     </section>
   );
