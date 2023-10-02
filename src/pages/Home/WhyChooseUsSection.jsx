@@ -17,7 +17,7 @@ const WhyChooseUsSection = () => {
           <h2 className="rtin-title font-semibold">
             We Will Make Absolutely Any Place Clean, Neat & Tidy.
           </h2>
-          <p className="mb-5">
+          <p className="mb-5 text-slate-600">
             Spa isa newsimply dummy text of the printing and type settingreat
             industrial lorem Ipsum has been the industry's standard dummy text
             everty since the when an unknown centurie.
@@ -33,7 +33,7 @@ const WhyChooseUsSection = () => {
                     <h4 className="text-[22px] text-primary leading-[1.4] font-semibold mb-3">
                       Customer Focused Reviews
                     </h4>
-                    <p>
+                    <p className="text-slate-600">
                       Aorem ipsum dolor sit amet consectetur adipisicing elit
                       sed do eiusmod tempor incididunt ut labore et dolore.
                     </p>
@@ -49,7 +49,7 @@ const WhyChooseUsSection = () => {
                     <h4 className="text-[22px] text-primary leading-[1.4] font-semibold mb-3">
                       Customer Focused Reviews
                     </h4>
-                    <p>
+                    <p className="text-slate-600">
                       Aorem ipsum dolor sit amet consectetur adipisicing elit
                       sed do eiusmod tempor incididunt ut labore et dolore.
                     </p>
@@ -65,7 +65,7 @@ const WhyChooseUsSection = () => {
                     <h4 className="text-[22px] text-primary leading-[1.4] font-semibold mb-3">
                       Customer Focused Reviews
                     </h4>
-                    <p>
+                    <p className="text-slate-600">
                       Aorem ipsum dolor sit amet consectetur adipisicing elit
                       sed do eiusmod tempor incididunt ut labore et dolore.
                     </p>

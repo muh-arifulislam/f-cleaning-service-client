@@ -35,8 +35,36 @@
   background-color: white;
   opacity: 0.8;
 }
-.testimonials-slider .swiper-pagination-bullet-active{
+.testimonials-slider .swiper-pagination-bullet-active {
   background-color: #287ff9;
+}
+
+/* showcases slider  */
+.showcases-slider .swiper-button-prev {
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+.showcases-slider .swiper-button-next {
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+.showcases-slider .swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+.showcases-slider .swiper-button-next::after {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
 }
 
 @media only screen and (max-width: 570px) {

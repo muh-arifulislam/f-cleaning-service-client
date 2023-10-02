@@ -1,8 +1,25 @@
 import React from "react";
 import { FiChevronRight } from "react-icons/fi";
-const Button = ({ children }) => {
+import { Link } from "react-router-dom";
+const Button = ({
+  children,
+  type = "",
+  className = "",
+  varient,
+  href = "/",
+}) => {
+  if (varient === "link") {
+    return (
+      <Link to={href} className={"custom-button " + className}>
+        {children}
+        <span>
+          <FiChevronRight fontSize={"22px"} />
+        </span>
+      </Link>
+    );
+  }
   return (
-    <button className="custom-button ">
+    <button type={type} className={"custom-button " + className}>
       {children}
       <span>
         <FiChevronRight fontSize={"22px"} />

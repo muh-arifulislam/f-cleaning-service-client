@@ -17,10 +17,10 @@ const CardWorkingProcess = ({ IconComponent, title, content }) => {
           size={"48px"}/>
       </div>
       <h2 className="text-[22px] text-primary leading-[1.3] font-semibold hover:text-secondary mb-5">
-        Book Online form
+        {title}
       </h2>
-      <p>
-        Ahen an unknown printer took a galley type and scrambled nknown printer.
+      <p className="text-slate-600">
+        {content}
       </p>
     </div>
   );

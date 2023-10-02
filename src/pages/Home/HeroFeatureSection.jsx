@@ -20,13 +20,12 @@ const HeroFeatureSection = () => {
             <br />
             <span className="font-light">As Good As New</span>
           </h4>
-
-          <p className="text-lg mb-5">
+          <p className="text-lg mb-5 text-slate-600">
             Spa isa newsimply dummy text of the printing and type settingare
             industrLorem Ipsum has been the industry's standard dummy text
             everty since the when an unknown centuries.
           </p>
-          <p className="text-lg mb-5">
+          <p className="text-lg mb-5 text-slate-600">
             Spa isa newsimply dummy text of the printing and type settingare
             industrLorem Ipsum has been the industry's standard dummy text
             everty since the when an unknown centuries.
@@ -34,46 +33,58 @@ const HeroFeatureSection = () => {
           <ul className="mb-[40px]">
             <li className="mb-[6px]">
               <p className="flex items-center gap-4">
-                <span>
+                <span className="text-primary">
                   <FaCheck />
                 </span>
-                <span className="text-lg font-semibold">Experienced Team</span>
+                <span className="text-lg font-medium  text-slate-600">
+                  Experienced Team
+                </span>
               </p>
             </li>
             <li className="mb-[6px]">
               <p className="flex items-center gap-4">
-                <span>
+                <span className="text-primary">
                   <FaCheck />
                 </span>
-                <span className="text-lg font-semibold">Experienced Team</span>
+                <span className="text-lg font-medium  text-slate-600">
+                  Keep the same cleaner for every visit
+                </span>
               </p>
             </li>
             <li className="mb-[6px]">
               <p className="flex items-center gap-4">
-                <span>
+                <span className="text-primary">
                   <FaCheck />
                 </span>
-                <span className="text-lg font-semibold">Experienced Team</span>
+                <span className="text-lg font-medium  text-slate-600">
+                  One-off, weekly or fortnightly visits
+                </span>
               </p>
             </li>
             <li className="mb-[6px]">
               <p className="flex items-center gap-4">
-                <span>
+                <span className="text-primary">
                   <FaCheck />
                 </span>
-                <span className="text-lg font-semibold">Experienced Team</span>
+                <span className="text-lg font-medium  text-slate-600">
+                  Book, manage & pay online
+                </span>
               </p>
             </li>
             <li className="mb-[6px]">
               <p className="flex items-center gap-4">
-                <span>
+                <span className="text-primary">
                   <FaCheck />
                 </span>
-                <span className="text-lg font-semibold">Experienced Team</span>
+                <span className="text-lg font-medium  text-slate-600">
+                  All in all service
+                </span>
               </p>
             </li>
           </ul>
-          <Button>Book a Service</Button>
+          <Button varient={"link"} href="/book-service">
+            Book a Service
+          </Button>
         </div>
       </div>
     </section>

@@ -21,13 +21,15 @@ const AboutUs = () => {
       <div className="max-w-[1200px] mx-auto lg:md:py-[120px] py-[60px]">
         <div className="grid lg:md:grid-cols-2 grid-cols-1">
           <div className="p-[10px]">
-            <h4 className="text-lg font-medium mb-[15px]">Know About Us</h4>
-            <p className="text-4xl font-bold leading-[1.4] mb-[15px]">
+            <h4 className="text-lg font-medium mb-[15px] text-secondary">
+              Know About Us
+            </h4>
+            <p className="text-4xl font-bold leading-[1.4] mb-[15px] text-primary">
               Affordable Pricing Plan, Expert and Quality Services We Provide.
             </p>
           </div>
           <div className="p-[10px]">
-            <p className="mb-[15px]">
+            <p className="mb-[15px] text-slate-600">
               Chen an unknown printer took a galley of type and scrambled it to
               make a type specimen book. It has survived not only five
               centuries, but also the leap into electronic typesetting,
@@ -49,14 +51,14 @@ const AboutUs = () => {
           <ul className="grid lg:md:grid-cols-2 grid-cols-1">
             <li>
               <div className="p-[10px] flex items-start gap-5">
-                <span className="mt-1 text-4xl text-blue-600">
+                <span className="mt-1 text-4xl text-secondary">
                   <BsCheckCircle className="" />
                 </span>
                 <div className="mb-5">
-                  <h4 className="text-2xl font-semibold mb-2">
+                  <h4 className="text-2xl font-semibold mb-2 text-primary">
                     Customer Focused Reviews
                   </h4>
-                  <p>
+                  <p className="text-slate-600">
                     Aorem ipsum dolor sit amet consectetur adipisicing elit sed
                     do eiusmod tempor incididunt ut labore et dolore.
                   </p>
@@ -65,14 +67,14 @@ const AboutUs = () => {
             </li>
             <li>
               <div className="p-[10px] flex items-start gap-5">
-                <span className="mt-1 text-4xl text-blue-600">
+                <span className="mt-1 text-4xl text-secondary">
                   <BsCheckCircle className="" />
                 </span>
                 <div className="mb-5">
-                  <h4 className="text-2xl font-semibold mb-2">
+                  <h4 className="text-2xl font-semibold mb-2 text-primary">
                     Customer Focused Reviews
                   </h4>
-                  <p>
+                  <p className="text-slate-600">
                     Aorem ipsum dolor sit amet consectetur adipisicing elit sed
                     do eiusmod tempor incididunt ut labore et dolore.
                   </p>
@@ -81,14 +83,14 @@ const AboutUs = () => {
             </li>
             <li>
               <div className="p-[10px] flex items-start gap-5">
-                <span className="mt-1 text-4xl text-blue-600">
+                <span className="mt-1 text-4xl text-secondary">
                   <BsCheckCircle className="" />
                 </span>
-                <div>
-                  <h4 className="text-2xl font-semibold mb-2">
+                <div className="mb-5">
+                  <h4 className="text-2xl font-semibold mb-2 text-primary">
                     Customer Focused Reviews
                   </h4>
-                  <p>
+                  <p className="text-slate-600">
                     Aorem ipsum dolor sit amet consectetur adipisicing elit sed
                     do eiusmod tempor incididunt ut labore et dolore.
                   </p>
@@ -97,14 +99,14 @@ const AboutUs = () => {
             </li>
             <li>
               <div className="p-[10px] flex items-start gap-5">
-                <span className="mt-1 text-4xl text-blue-600">
+                <span className="mt-1 text-4xl text-secondary">
                   <BsCheckCircle className="" />
                 </span>
-                <div>
-                  <h4 className="text-2xl font-semibold mb-2">
+                <div className="mb-5">
+                  <h4 className="text-2xl font-semibold mb-2 text-primary">
                     Customer Focused Reviews
                   </h4>
-                  <p>
+                  <p className="text-slate-600">
                     Aorem ipsum dolor sit amet consectetur adipisicing elit sed
                     do eiusmod tempor incididunt ut labore et dolore.
                   </p>
@@ -114,8 +116,8 @@ const AboutUs = () => {
           </ul>
         </div>
       </div>
-      <div className="bg-blue-400 ">
-        <ExpertsSection />
+      <div className="bg-secondary ">
+        <ExpertsSection varient="secondary" />
       </div>
       <div>
         <WorkingProcessSection />
@@ -126,17 +128,17 @@ const AboutUs = () => {
             <img src={personImage} alt="" />
           </div>
           <div className="flex flex-col justify-center">
-            <h2 className="text-5xl font-semibold leading-[1.4] mb-5">
+            <h2 className="text-5xl font-semibold leading-[1.4] mb-5 text-white">
               Together We'll Explore New Things
             </h2>
-            <p className="mb-5">
+            <p className="mb-5 text-slate-50">
               Chen an unknown printer took a galley of type and scrambled it to
               make a type specimen book. It has survived not only five
               centuries, but also the leap into electronic typesetting,
               remaining essentially.
             </p>
             <div>
-              <Button>Book Service</Button>
+              <Button varient={"link"} href="/book-service">Book Service</Button>
             </div>
           </div>
         </div>

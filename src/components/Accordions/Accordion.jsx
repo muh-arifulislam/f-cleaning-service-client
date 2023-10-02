@@ -27,7 +27,7 @@ const Accordian = ({ title, content, isActive = false }) => {
       </button>
       {isOpen && (
         <div className="p-5">
-          <p>{content}</p>
+          <p className="text-slate-600">{content}</p>
         </div>
       )}
     </div>

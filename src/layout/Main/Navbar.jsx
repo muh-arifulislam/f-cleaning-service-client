@@ -62,7 +62,7 @@ const Navbar = () => {
               <div>
                 <h4>Quick Contact</h4>
                 <a className="font-bold text-[20px]" href="tel:+8801306560747">
-                  +8801306560747
+                  +968 955527 539
                 </a>
               </div>
             </div>
@@ -138,6 +138,19 @@ const Navbar = () => {
                 >
                   Contact
                 </Link>
+              </li>
+              <li className="mt-1">
+                <div className="lg:md:hidden flex gap-4 items-center justify-center text-center">
+                  <div>
+                    <h4>Quick Contact</h4>
+                    <a
+                      className="font-bold text-[20px]"
+                      href="tel:+8801306560747"
+                    >
+                      +968 955527 539
+                    </a>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>

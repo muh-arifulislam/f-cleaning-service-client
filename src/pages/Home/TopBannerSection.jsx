@@ -2,8 +2,36 @@ import React from "react";
 
 // components
 import Button from "../../components/Button/Button";
+import { Link } from "react-router-dom";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
 
 const TopBannerSection = () => {
+  const {
+    register,
+    handleSubmit,
+    reset,
+    clearErrors,
+    formState: { errors },
+  } = useForm();
+
+  const onSubmit = (data) => {
+    console.log(data);
+    fetch("http://localhost:9000/customer", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.acknowledgement) {
+          reset();
+          toast.success("Welcome! your booking successfully confirmed.");
+        }
+      });
+  };
   return (
     <section className="">
       <div className="relative lg:py-[250px] py-[100px] h-[100vh] lg:mb-[100px] md:mb-[100px] mb-5 bg-top-banner-bg bg-cover bg-center bg-no-repeat z-0 overlay-primary">
@@ -20,48 +48,80 @@ const TopBannerSection = () => {
               to make running a WooCommerce online storer and straight forward
               so you can.
             </p>
-            <Button>Take On Service</Button>
+            <Button varient="link" href="/book-service">
+              Take On Service
+            </Button>
           </div>
         </div>
         {/* only desktop view */}
         <div className="lg:block md:block hidden absolute bottom-0 left-0 w-full">
-          <div className="max-w-[1200px] mx-auto px-[10px] py-[20px] custom-shadow rounded-md lg:translate-y-[40%] ">
+          <div className="max-w-[1200px] mx-auto px-3 py-5 custom-shadow rounded-md lg:translate-y-[40%] ">
             <div className="mb-6">
               <h3 className="text-2xl font-semibold text-white">
                 Request for Estimate
               </h3>
             </div>
-            <form action="">
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
                 <div>
                   <input
-                    className="w-full px-3 py-3 outline-none rounded-md"
+                    {...register("name", { required: true, maxLength: 20 })}
+                    aria-invalid={errors.name ? "true" : "false"}
+                    className="w-full px-3 py-3 border outline-none rounded-md"
                     type="text"
                     placeholder="Name*"
                   />
+                  {errors.name?.type === "required" && (
+                    <p role="alert" className="pt-2 text-red-500">
+                      Error !! First name is required
+                    </p>
+                  )}
                 </div>
                 <div>
                   <input
-                    className="w-full px-3 py-3 outline-none rounded-md"
-                    type="email"
-                    name=""
-                    id=""
-                    placeholder="Email*"
+                    {...register("address", {
+                      required: true,
+                    })}
+                    className="w-full px-3 py-3 border outline-none rounded-md"
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Address*"
                   />
-                </div>
-                <div>
-                  <select className="w-full px-3 py-3 outline-none rounded-md">
-                    <option value="0">Select Service:</option>
-                    <option value="1">Audi</option>
-                    <option value="2">BMW</option>
-                  </select>
+                  {errors.address?.type === "required" && (
+                    <p role="alert" className="pt-2 text-red-500">
+                      Error !! Address is required
+                    </p>
+                  )}
                 </div>
                 <div>
                   <input
+                    {...register("phone", {
+                      required: true,
+                      pattern: /^(9|7)\d{7}$/,
+                    })}
+                    aria-invalid={errors.phone ? "true" : "false"}
+                    className="w-full px-3 py-3 border outline-none rounded-md"
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="Phone*"
+                  />
+                  {errors.phone?.type === "required" && (
+                    <p role="alert" className="pt-2 text-red-500">
+                      Error !! Phone number is required
+                    </p>
+                  )}
+                </div>
+                <div>
+                  {/* <input
                     className="w-full px-3 py-3 outline-none rounded-md bg-orange-400 font-medium"
                     type="submit"
                     value="Submit"
-                  />
+                  /> */}
+                  <Button type="submit" className="w-full flex justify-center">
+                    Submit
+                  </Button>
                 </div>
               </div>
             </form>
@@ -72,28 +132,30 @@ const TopBannerSection = () => {
       <div className="lg:hidden block p-[10px]">
         <div className="max-w-[1200px] mx-auto px-[10px] py-[20px] custom-shadow rounded-md lg:translate-y-[40%] ">
           <div className="mb-6">
-            <h3 className="text-2xl font-semibold ">Request for Estimate</h3>
+            <h3 className="text-2xl font-semibold text-center">
+              Request for Query
+            </h3>
           </div>
           <form action="">
             <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
               <div>
                 <input
-                  className="w-full px-3 py-3 outline-none rounded-md"
+                  className="w-full px-3 py-3 border outline-1  rounded-md"
                   type="text"
                   placeholder="Name*"
                 />
               </div>
               <div>
                 <input
-                  className="w-full px-3 py-3 outline-none rounded-md"
-                  type="email"
+                  className="w-full px-3 py-3 border outline-1 rounded-md"
+                  type="phone"
                   name=""
                   id=""
-                  placeholder="Email*"
+                  placeholder="Phone*"
                 />
               </div>
               <div>
-                <select className="w-full px-3 py-3 outline-none rounded-md">
+                <select className="w-full px-3 py-3 border outline-1 rounded-md">
                   <option value="0">Select Service:</option>
                   <option value="1">Audi</option>
                   <option value="2">BMW</option>
@@ -101,7 +163,7 @@ const TopBannerSection = () => {
               </div>
               <div>
                 <input
-                  className="w-full px-3 py-3 outline-none rounded-md bg-orange-400 font-medium"
+                  className="w-full px-3 py-3 outline-none rounded-md bg-tertiary text-slate-600 font-medium"
                   type="submit"
                   value="Submit"
                 />

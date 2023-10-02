@@ -17,7 +17,7 @@ const BannerSection = () => {
           <h2 className="text-4xl text-white font-semibold mb-8">
             Feel free to communicate with us
           </h2>
-          <Button>Book Service</Button>
+          <Button varient={"link"} href="/book-service">Book Service</Button>
         </div>
       </div>
     </section>

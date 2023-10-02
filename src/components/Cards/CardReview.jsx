@@ -15,10 +15,10 @@ const CardReview = ({ review }) => {
           <FaStar />
           <FaStar />
         </div>
-        <p className="my-[28px] w-[80%] mx-auto">{review.testimonial}</p>
+        <p className="my-[28px] w-[80%] mx-auto text-slate-600">"{review.testimonial}"</p>
         <div>
-          <h3 className="text-xl font-semibold mb-1">{review.name}</h3>
-          <h4 className="text-md font-medium text-slate-500">
+          <h3 className="text-xl font-semibold mb-1 text-primary">{review.name}</h3>
+          <h4 className="text-sm font-medium text-slate-500">
             {review.designation}
           </h4>
         </div>

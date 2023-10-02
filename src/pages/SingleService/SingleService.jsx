@@ -11,11 +11,16 @@ import Newsletter from "../../components/Newsletter";
 
 // images
 import image from "../../assets/images/house5.jpg";
+import { useGlobalState } from "../../state/GlobalStateProvider";
 
 const SingleService = () => {
+  const { services } = useGlobalState();
   const { id } = useParams();
   const [service, setService] = useState({});
-  useEffect(() => {}, []);
+  useEffect(() => {
+    const filteredService = services.data.find((item) => item._id === id);
+    setService(filteredService);
+  }, []);
   return (
     <section>
       <SectionHeader title={service?.title} />
@@ -91,84 +96,48 @@ const SingleService = () => {
             </div>
             <div>
               <div className="">
-                <p className="mb-5">
-                  Ahen an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book areIt hasear survived not only
-                  five centuries, but also the leap into electronic typesetting,
-                  remaining essentiall yellow aw unchangedh the release of
-                  Letraset sheets containing and more recently with desktop.Ahen
-                  an unknown printer took a galley of type and scrambled it to
-                  make a type.
-                </p>
-                <p>
-                  Ahen an unknown printer took a galley of type and scrambled it
-                  to make a type specimen book areIt hasear survived not only
-                  five centuries, but also the leap into electronic typesetting,
-                  remaining essentiall yellow aw unchangedh the release of
-                  Letraset sheets containing and more recently with desktop.Ahen
-                  an unknown printer took a galley of type and scrambled it to
-                  make a type.
-                </p>
+                <p className="mb-5 text-slate-600">{service?.description1}</p>
+                <p className="text-slate-600">{service?.description2}</p>
               </div>
             </div>
             <div className="my-8 grid lg:md:grid-cols-2 grid-cols-1">
               <div className="flex gap-5">
-                <span className="text-4xl text-blue-500 mt-1">
+                <span className="text-4xl text-secondary mt-1">
                   <BsCheckCircle />
                 </span>
                 <div>
-                  <h2 className="text-2xl font-semibold mb-4">
+                  <h2 className="text-2xl text-primary font-semibold mb-4">
                     Quality We Ensure
                   </h2>
-                  <p>
+                  <p className="text-slate-600">
                     Aorem ipsum dolor sit amet consectetur adipisicing elit sed
                     doeiusmod tempor incididunt ut labore et dolore.
                   </p>
                 </div>
               </div>
               <div className="flex gap-5">
-                <span className="text-4xl text-blue-500 mt-1">
+                <span className="text-4xl text-secondary mt-1">
                   <BsCheckCircle />
                 </span>
                 <div>
-                  <h2 className="text-2xl font-semibold mb-4">
+                  <h2 className="text-2xl text-primary font-semibold mb-4">
                     Quality We Ensure
                   </h2>
-                  <p>
+                  <p className="text-slate-600">
                     Aorem ipsum dolor sit amet consectetur adipisicing elit sed
                     doeiusmod tempor incididunt ut labore et dolore.
                   </p>
                 </div>
               </div>
-            </div>
-            <div className="mb-8">
-              <p className="mb-5">
-                Ahen an unknown printer took a galley of type and scrambled it
-                to make a type specimen book areIt hasear survived not only five
-                centuries, but also the leap into electronic typesetting,
-                remaining essentiall yellow aw unchangedh the release of
-                Letraset sheets containing and more recently with desktop.Ahen
-                an unknown printer took a galley of type and scrambled it to
-                make a type.
-              </p>
-              <p>
-                Ahen an unknown printer took a galley of type and scrambled it
-                to make a type specimen book areIt hasear survived not only five
-                centuries, but also the leap into electronic typesetting,
-                remaining essentiall yellow aw unchangedh the release of
-                Letraset sheets containing and more recently with desktop.Ahen
-                an unknown printer took a galley of type and scrambled it to
-                make a type.
-              </p>
             </div>
             <div className="mb-8">
               <Hero />
             </div>
             <div>
-              <h2 className="text-2xl font-semibold text-blue-800 mb-5">
+              <h2 className="text-2xl font-semibold text-primary mb-5">
                 Frequently Ask Questions
               </h2>
-              <p className="mb-5">
+              <p className="mb-5 text-slate-600">
                 Ahen an unknown printer took a galley of type and scrambled it
                 to make a type specimen book areIt hasear survived not only five
                 centuries, but also the leap into electronic typesetting,

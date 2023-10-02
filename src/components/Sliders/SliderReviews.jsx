@@ -17,6 +17,8 @@ import { useGlobalState } from "../../state/GlobalStateProvider";
 
 // components
 import CardReview from "../Cards/CardReview";
+import SliderLoader from "../Loader/SliderLoader";
+import CardSliderError from "../Cards/CardSliderError";
 
 const SliderReviews = () => {
   const { reviews } = useGlobalState();
@@ -24,7 +26,12 @@ const SliderReviews = () => {
   if (window.screen.availWidth < 570) {
     slidePerView = 1;
   }
-
+  if (reviews.loading) {
+    return <SliderLoader />;
+  }
+  if (reviews.error) {
+    return <CardSliderError error={reviews.error} />;
+  }
   return (
     <Swiper
       slidesPerView={slidePerView}

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 
-// images 
+// images
 import image from "../../assets/images/service10.jpg";
 
 const Hero = () => {
@@ -11,8 +11,10 @@ const Hero = () => {
         <img className="rounded" src={image} alt="" />
       </div>
       <div>
-        <h2 className="text-2xl font-semibold text-blue-400 mb-5">Experienced People can help you more.</h2>
-        <p className="mb-5">
+        <h2 className="text-2xl font-semibold text-primary mb-5">
+          Experienced People can help you more.
+        </h2>
+        <p className="mb-5 text-slate-600">
           Ahen an unknown printer took a galley of type andty scrambled it to
           make a type specimen book areIter hasear survived not only five
           centuries, but also the leap into electronic type.
@@ -20,42 +22,52 @@ const Hero = () => {
         <ul>
           <li className="mb-[6px]">
             <p className="flex items-center gap-4">
-              <span className="text-blue-400">
+              <span className="text-secondary">
                 <FaCheck />
               </span>
-              <span className="text-lg font-semibold">Experienced Team</span>
+              <span className="text-md font-medium text-slate-600">
+                Experienced Team
+              </span>
             </p>
           </li>
           <li className="mb-[6px]">
             <p className="flex items-center gap-4">
-              <span className="text-blue-400">
+              <span className="text-secondary">
                 <FaCheck />
               </span>
-              <span className="text-lg font-semibold">Experienced Team</span>
+              <span className="text-md font-medium text-slate-600">
+                Keep the same cleaner for every visit
+              </span>
             </p>
           </li>
           <li className="mb-[6px]">
             <p className="flex items-center gap-4">
-              <span className="text-blue-400">
+              <span className="text-secondary">
                 <FaCheck />
               </span>
-              <span className="text-lg font-semibold">Experienced Team</span>
+              <span className="text-md font-medium text-slate-600">
+                One-off, weekly or fortnightly visits
+              </span>
             </p>
           </li>
           <li className="mb-[6px]">
             <p className="flex items-center gap-4">
-              <span className="text-blue-400">
+              <span className="text-secondary">
                 <FaCheck />
               </span>
-              <span className="text-lg font-semibold">Experienced Team</span>
+              <span className="text-md font-medium text-slate-600">
+                Book, manage & pay online
+              </span>
             </p>
           </li>
           <li className="mb-[6px]">
             <p className="flex items-center gap-4">
-              <span className="text-blue-400">
+              <span className="text-secondary">
                 <FaCheck />
               </span>
-              <span className="text-lg font-semibold">Experienced Team</span>
+              <span className="text-md font-medium text-slate-600">
+                All in all service
+              </span>
             </p>
           </li>
         </ul>

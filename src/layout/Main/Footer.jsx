@@ -180,7 +180,18 @@ const Footer = () => {
                 href="tel:+985-8844-000"
                 className="text-slate-400 font-medium transition hover:text-white"
               >
-                +985-8844-000
+                +968-95527-539
+              </a>
+            </h4>
+            <h4 className="mb-4 flex items-center gap-3">
+              <span className="text-slate-400">
+                <FaPhone />
+              </span>
+              <a
+                href="tel:+985-8844-000"
+                className="text-slate-400 font-medium transition hover:text-white"
+              >
+                +968-95546-049
               </a>
             </h4>
             <h4 className="flex items-center gap-3 mb-8">

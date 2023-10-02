@@ -29,13 +29,13 @@ const GlobalStateProvider = ({ children }) => {
         const data = await response.json();
         dispatch({ type: type, payload: data });
       } catch (error) {
-        dispatch({ type: SET_ERROR, target, payload: error });
+        dispatch({ type: SET_ERROR, target, payload: error.message });
       }
     };
 
-    fetchData("services", FETCH_SERVICES, "http://localhost:9000/services");
-    fetchData("reviews", FETCH_REVIEWS, "http://localhost:9000/reviews");
-    fetchData("showcases", FETCH_SHOWCASES, "http://localhost:9000/showcases");
+    fetchData("services", FETCH_SERVICES, state.apiUrl + "services");
+    fetchData("reviews", FETCH_REVIEWS, state.apiUrl + "reviews");
+    fetchData("showcases", FETCH_SHOWCASES, state.apiUrl + "showcases");
   }, []);
 
   return (
@@ -44,6 +44,7 @@ const GlobalStateProvider = ({ children }) => {
         services: state.services,
         reviews: state.reviews,
         showcases: state.showcases,
+        apiUrl: state.apiUrl,
       }}
     >
       {children}
