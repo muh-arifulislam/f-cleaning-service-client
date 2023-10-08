@@ -23,7 +23,7 @@ export const initialState = {
     loading: false,
     error: null,
   },
-  apiUrl: "https://f-cleaning-service-server-3jduqm9rn-muh-arifulislam.vercel.app/",
+  apiUrl: "https://api.gocleanix.com/",
 };
 
 const globalStateReducer = (state, action) => {

@@ -33,7 +33,7 @@ const Navbar = () => {
   }, [prevScrollY]);
   return (
     <div
-      className={`sticky z-10 transition-all ease-in-out duration-500  ${
+      className={`sticky z-[9999] transition-all ease-in-out duration-500  ${
         showNavbar ? "top-0" : "top-[-100%]"
       }`}
     >
@@ -62,7 +62,7 @@ const Navbar = () => {
               <div>
                 <h4>Quick Contact</h4>
                 <a className="font-bold text-[20px]" href="tel:+8801306560747">
-                  +968 955527 539
+                  +968 95527 539
                 </a>
               </div>
             </div>
@@ -101,6 +101,7 @@ const Navbar = () => {
             <ul className="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
               <li>
                 <Link
+                  onClick={() => setToggleMenu(false)}
                   to={"/"}
                   className="block text-lg py-2 pl-3 pr-4 rounded md:bg-transparent md:p-0 transition hover:text-secondary"
                 >
@@ -109,6 +110,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  onClick={() => setToggleMenu(false)}
                   to={"/services"}
                   className="block text-lg py-2 pl-3 pr-4 text-gray-900 rounded transition hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -117,6 +119,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  onClick={() => setToggleMenu(false)}
                   to={"/showcase"}
                   className="block text-lg py-2 pl-3 pr-4 text-gray-900 rounded transition hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -125,6 +128,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  onClick={() => setToggleMenu(false)}
                   to={"/about-us"}
                   className="block text-lg py-2 pl-3 pr-4 text-gray-900 rounded transition hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -133,6 +137,7 @@ const Navbar = () => {
               </li>
               <li>
                 <Link
+                  onClick={() => setToggleMenu(false)}
                   to={"/contact-us"}
                   className="block text-lg py-2 pl-3 pr-4 text-gray-900 rounded transition hover:bg-gray-100 md:hover:bg-transparent md:hover:text-secondary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
                 >
@@ -147,7 +152,7 @@ const Navbar = () => {
                       className="font-bold text-[20px]"
                       href="tel:+8801306560747"
                     >
-                      +968 955527 539
+                      +968 95527 539
                     </a>
                   </div>
                 </div>

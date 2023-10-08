@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 // images
 import image from "../../assets/images/house5-620x672.jpg";
 
-const CardShowcaseItem = () => {
+const CardShowcaseItem = ({ showcase }) => {
   const [hover, setHover] = useState(false);
   return (
     <div
@@ -12,14 +12,18 @@ const CardShowcaseItem = () => {
       onMouseOut={() => setHover(false)}
       className="relative"
     >
-      <img className="max-w-full h-auto" src={image} alt="" />
+      <img
+        className="w-auto lg:md:h-[360px] h-[340px] object-cover"
+        src={`https://api.gocleanix.com/public/uploads/images/${showcase.img}`}
+        alt=""
+      />
       <div
         className={`absolute top-0 left-0 w-full h-full bg-[#14287be6] flex items-center justify-center transition-all ease-out duration-500 ${
           hover ? " visible opacity-100 " : "invisible opacity-0"
         }`}
       >
         <div>
-          <Link className="text-white text-xl font-semibold" to="/">House Cleaning</Link>
+          <h4 className="text-white text-xl font-semibold">House Cleaning</h4>
         </div>
       </div>
     </div>

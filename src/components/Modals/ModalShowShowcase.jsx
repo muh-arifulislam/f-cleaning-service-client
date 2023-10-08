@@ -7,16 +7,17 @@ const ModalShowShowcase = ({ isOpen, closeModal, img }) => {
   return (
     <div className={modalClasses}>
       <div className="modal-overlay fixed inset-0 bg-black opacity-50"></div>
-      <div className="modal-container bg-white w-3/4 md:max-w-md mx-auto rounded shadow-lg z-50 ">
+      <div className="modal-container  lg:md:w-3/4 w-full lg:md:max-w-[60vw] max-w-[100vw] mx-auto rounded z-50 ">
         {/* Modal content goes here */}
-        <div className="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <div className="relative  rounded-lg dark:bg-gray-700">
           <button
             onClick={() => closeModal()}
             type="button"
-            className="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ml-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            className="absolute lg:md:top-[10px] lg:md:right-[10px] top-0 right-0 translate-x-[-50%] translate-y-[50%] text-white  rounded-full text-sm w-12 h-12 ml-auto inline-flex justify-center items-center transition ease-linear duration-200 hover:text-primary backdrop-blur-lg"
+            style={{ backgroundColor: "rgba(40, 127, 249, 0.3)" }}
           >
             <svg
-              className="w-3 h-3"
+              className="w-5 h-5"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"

@@ -15,11 +15,13 @@ const Contact = () => {
           <div className="col-span-2">
             <div className="mb-10">
               <iframe
-                className="w-full h-[500px]"
+                width={"100%"}
+                height={"450px"}
+                title="contact-map"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d5004.381943735397!2d58.246059106806364!3d23.626617814672226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sbd!4v1696765783906!5m2!1sen!2sbd"
+                allowFullScreen=""
                 loading="lazy"
-                src="https://maps.google.com/maps?q=London%20Eye%2C%20London%2C%20United%20Kingdom&amp;t=m&amp;z=9&amp;output=embed&amp;iwloc=near"
-                title="London Eye, London, United Kingdom"
-                aria-label="London Eye, London, United Kingdom"
+                referrerPolicy="no-referrer-when-downgrade"
               ></iframe>
             </div>
             <div className="grid lg:md:grid-cols-3 grid-cols-1">
@@ -31,13 +33,13 @@ const Contact = () => {
                   <h2 className="text-2xl font-semibold mb-4">Phone:</h2>
                   <ul>
                     <li className="mb-1">
-                      <a className="" href="tel:+01995212706">
-                        +88019 952 127 06,
+                      <a className="" href="tel:+96895527539">
+                        +968 95527 539
                       </a>
                     </li>
                     <li className="mb-1">
-                      <a className="" href="tel:+01995212706">
-                        +88019 952 127 06,
+                      <a className="" href="tel:+96895546049">
+                        +968 95546 049
                       </a>
                     </li>
                   </ul>
@@ -51,13 +53,13 @@ const Contact = () => {
                   <h2 className="text-2xl font-semibold mb-4">Email:</h2>
                   <ul>
                     <li className="mb-1">
-                      <a className="" href="mailto:arif@gmail.com">
-                        arif@gmail.com,
+                      <a className="" href="mailto:admin@gocleanix.com">
+                        info@gocleanix.com
                       </a>
                     </li>
                     <li className="mb-1">
-                      <a className="" href="mailto:arif@gmail.com">
-                        arif@gmail.com,
+                      <a className="" href="mailto:gocleanix@gmail.com">
+                        gocleanix@gmail.com
                       </a>
                     </li>
                   </ul>
@@ -71,7 +73,7 @@ const Contact = () => {
                   <h2 className="text-2xl font-semibold mb-4">Location:</h2>
                   <ul>
                     <li className="mb-1">
-                      <address>51 Street, Newyork City, NYPD</address>
+                      <address>Al Hail, Muscat, Oman</address>
                     </li>
                   </ul>
                 </div>

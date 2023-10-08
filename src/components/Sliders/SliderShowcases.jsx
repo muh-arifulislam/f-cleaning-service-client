@@ -54,7 +54,7 @@ const SliderShowcases = () => {
             key={showcase?._id}
             className="cursor-pointer"
           >
-            <CardShowcaseItem />
+            <CardShowcaseItem showcase={showcase} />
           </SwiperSlide>
         ))}
       </Swiper>

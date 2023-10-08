@@ -30,8 +30,8 @@ const Footer = () => {
               />
             </div>
             <p className="mb-5 text-slate-400">
-              There are many variations of passages of Lorem Ipsum available,
-              There are many variations of passages.
+              Welcome to Go Cleanix. It's a promising Cleaning Service Provider
+              based in Muscat, Oman.
             </p>
             <div>
               <h4 className="text-xl font-semibold mb-5 text-white">
@@ -45,57 +45,57 @@ const Footer = () => {
             <ul>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/services/65228a4ba226f01a90b2087c"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
                     <FaChevronRight />
                   </span>
-                  Toilet Cleaning
+                  House Cleaning
                 </Link>
               </li>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/services/65228a4ba226f01a90b2087d"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
                     <FaChevronRight />
                   </span>
-                  Toilet Cleaning
+                  Office Cleaning
                 </Link>
               </li>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/services/65228a4ba226f01a90b2087e"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
                     <FaChevronRight />
                   </span>
-                  Toilet Cleaning
+                  Shop Cleaning
                 </Link>
               </li>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/services/65228a4ba226f01a90b2087f"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
                     <FaChevronRight />
                   </span>
-                  Toilet Cleaning
+                  Sofa Deep Cleaning
                 </Link>
               </li>
               <li className="mb-4">
                 <Link
-                  to={"/"}
+                  to={"/services/65228a4ba226f01a90b20889"}
                   className="inline-flex  items-center gap-2 font-medium text-slate-400 transition hover:text-white"
                 >
                   <span className="text-sm">
                     <FaChevronRight />
                   </span>
-                  Toilet Cleaning
+                  Garden Cutting & Cleaning
                 </Link>
               </li>
             </ul>
@@ -170,7 +170,7 @@ const Footer = () => {
               <span>
                 <FaLocationArrow />
               </span>
-              <address>59 Street, B4 Appartment, Australia</address>
+              <address>Al Hail, Muscat, Oman</address>
             </h2>
             <h4 className="mb-4 flex items-center gap-3">
               <span className="text-slate-400">

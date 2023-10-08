@@ -15,9 +15,9 @@ const Hero = () => {
           Experienced People can help you more.
         </h2>
         <p className="mb-5 text-slate-600">
-          Ahen an unknown printer took a galley of type andty scrambled it to
-          make a type specimen book areIter hasear survived not only five
-          centuries, but also the leap into electronic type.
+          In your journey, experienced individuals offer invaluable insights,
+          wisdom, and support. Their knowledge and expertise pave the way for
+          smoother paths, wiser decisions, and greater achievements.
         </p>
         <ul>
           <li className="mb-[6px]">

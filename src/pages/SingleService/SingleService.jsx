@@ -12,15 +12,27 @@ import Newsletter from "../../components/Newsletter";
 // images
 import image from "../../assets/images/house5.jpg";
 import { useGlobalState } from "../../state/GlobalStateProvider";
+import CardServiceLink from "../../components/Cards/CardServiceLink";
+import { useForm } from "react-hook-form";
+import { toast } from "react-toastify";
+import FormAddReview from "../../components/Forms/FormAddReview";
 
 const SingleService = () => {
   const { services } = useGlobalState();
   const { id } = useParams();
   const [service, setService] = useState({});
+
   useEffect(() => {
     const filteredService = services.data.find((item) => item._id === id);
     setService(filteredService);
-  }, []);
+  }, [services, id]);
+  if (services.loading) {
+    return (
+      <div className="h-[80vh] flex justify-center items-center">
+        <span className="loader"></span>
+      </div>
+    );
+  }
   return (
     <section>
       <SectionHeader title={service?.title} />
@@ -31,69 +43,18 @@ const SingleService = () => {
               <FormBookService />
             </div>
             <div className="mb-8 lg:md:block hidden">
-              <div className="lg:md:p-[40px] p-5 border">
-                <div className="relative pb-4 mb-8">
-                  <h4 className="text-xl font-semibold">Services</h4>
-                  <span className="absolute bottom-0 left-0 w-[40px] h-[2px] bg-blue-600"></span>
-                </div>
-                <div>
-                  <ul>
-                    <li className="py-3 border-b border-dashed">
-                      <Link
-                        className="text-md text-slate-600 inline-flex items-center gap-2 transition hover:text-blue-400"
-                        to="/services/offical-cleaning"
-                      >
-                        <span className="text-xs">
-                          <BsChevronRight />
-                        </span>
-                        <span className="">Office Cleaning</span>
-                      </Link>
-                    </li>
-                    <li className="py-3 border-b border-dashed">
-                      <Link
-                        className="text-md text-slate-600 inline-flex items-center gap-2 transition hover:text-blue-400"
-                        to="/services/offical-cleaning"
-                      >
-                        <span className="text-xs">
-                          <BsChevronRight />
-                        </span>
-                        <span className="">Office Cleaning</span>
-                      </Link>
-                    </li>
-                    <li className="py-3 border-b border-dashed">
-                      <Link
-                        className="text-md text-slate-600 inline-flex items-center gap-2 transition hover:text-blue-400"
-                        to="/services/offical-cleaning"
-                      >
-                        <span className="text-xs">
-                          <BsChevronRight />
-                        </span>
-                        <span className="">Office Cleaning</span>
-                      </Link>
-                    </li>
-                    <li className="py-3 border-b border-dashed">
-                      <Link
-                        className="text-md text-slate-600 inline-flex items-center gap-2 transition hover:text-blue-400"
-                        to="/services/offical-cleaning"
-                      >
-                        <span className="text-xs">
-                          <BsChevronRight />
-                        </span>
-                        <span className="">Office Cleaning</span>
-                      </Link>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <CardServiceLink />
             </div>
             <div className="lg:md:block hidden">
               <Newsletter />
             </div>
           </div>
           <div className="col-span-2">
+            {/* service main image  */}
             <div className="mb-10">
-              <img src={image} alt="" />
+              <img src={service?.img} alt="" />
             </div>
+            {/* service descriptions  */}
             <div>
               <div className="">
                 <p className="mb-5 text-slate-600">{service?.description1}</p>
@@ -110,8 +71,9 @@ const SingleService = () => {
                     Quality We Ensure
                   </h2>
                   <p className="text-slate-600">
-                    Aorem ipsum dolor sit amet consectetur adipisicing elit sed
-                    doeiusmod tempor incididunt ut labore et dolore.
+                    Unwavering commitment to top-notch cleaning standards. Your
+                    satisfaction is our priority. Experience excellence with our
+                    cleaning services.
                   </p>
                 </div>
               </div>
@@ -121,28 +83,29 @@ const SingleService = () => {
                 </span>
                 <div>
                   <h2 className="text-2xl text-primary font-semibold mb-4">
-                    Quality We Ensure
+                    Experienced Workers
                   </h2>
                   <p className="text-slate-600">
-                    Aorem ipsum dolor sit amet consectetur adipisicing elit sed
-                    doeiusmod tempor incididunt ut labore et dolore.
+                    Highly skilled and seasoned professionals dedicated to
+                    superior cleaning. Trust our experienced team for
+                    outstanding results in every service.
                   </p>
                 </div>
               </div>
             </div>
+            {/* hero section  */}
             <div className="mb-8">
               <Hero />
             </div>
+            {/* faq section  */}
             <div>
               <h2 className="text-2xl font-semibold text-primary mb-5">
                 Frequently Ask Questions
               </h2>
               <p className="mb-5 text-slate-600">
-                Ahen an unknown printer took a galley of type and scrambled it
-                to make a type specimen book areIt hasear survived not only five
-                centuries, but also the leap into electronic typesetting,
-                remaining essentiall yellow aw unchangedh the release o
-                type.Ahen an unknown printer took a galley of type scram.
+                Find quick answers to common questions in our FAQ section. We've
+                compiled a comprehensive list of information to address your
+                queries efficiently. Explore now for clarity and convenience.
               </p>
               <div>
                 {service?.faq?.map((item, idx) => (
@@ -150,8 +113,13 @@ const SingleService = () => {
                 ))}
               </div>
             </div>
+            <div></div>
           </div>
         </div>
+        {/* user review adding section  */}
+        <section className="mt-8">
+          <FormAddReview />
+        </section>
       </div>
     </section>
   );

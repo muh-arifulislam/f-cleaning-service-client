@@ -30,12 +30,14 @@ const AboutUs = () => {
           </div>
           <div className="p-[10px]">
             <p className="mb-[15px] text-slate-600">
-              Chen an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five
-              centuries, but also the leap into electronic typesetting,
-              remaining essentially unchanged.Chen an unknown printer took a
-              galley of type and scrambled it to make a type specimen book. It
-              has survived not only five centuries.
+              Experience the epitome of cleanliness with our professional
+              cleaning service. We pride ourselves on delivering spotless spaces
+              that shine with hygiene and freshness. Our skilled and trustworthy
+              team employs the latest techniques and eco-friendly products to
+              ensure every nook and cranny is immaculate. Whether it's
+              residential, commercial, or specialized cleaning, we're your
+              trusted partner in maintaining a pristine and healthy environment
+              for you and your loved ones.
             </p>
           </div>
         </div>
@@ -59,8 +61,9 @@ const AboutUs = () => {
                     Customer Focused Reviews
                   </h4>
                   <p className="text-slate-600">
-                    Aorem ipsum dolor sit amet consectetur adipisicing elit sed
-                    do eiusmod tempor incididunt ut labore et dolore.
+                    Our dedicated evaluations prioritize your feedback and
+                    needs, ensuring exceptional products and services tailored
+                    to your satisfaction.
                   </p>
                 </div>
               </div>
@@ -72,43 +75,12 @@ const AboutUs = () => {
                 </span>
                 <div className="mb-5">
                   <h4 className="text-2xl font-semibold mb-2 text-primary">
-                    Customer Focused Reviews
+                    We Are Committed
                   </h4>
                   <p className="text-slate-600">
-                    Aorem ipsum dolor sit amet consectetur adipisicing elit sed
-                    do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="p-[10px] flex items-start gap-5">
-                <span className="mt-1 text-4xl text-secondary">
-                  <BsCheckCircle className="" />
-                </span>
-                <div className="mb-5">
-                  <h4 className="text-2xl font-semibold mb-2 text-primary">
-                    Customer Focused Reviews
-                  </h4>
-                  <p className="text-slate-600">
-                    Aorem ipsum dolor sit amet consectetur adipisicing elit sed
-                    do eiusmod tempor incididunt ut labore et dolore.
-                  </p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div className="p-[10px] flex items-start gap-5">
-                <span className="mt-1 text-4xl text-secondary">
-                  <BsCheckCircle className="" />
-                </span>
-                <div className="mb-5">
-                  <h4 className="text-2xl font-semibold mb-2 text-primary">
-                    Customer Focused Reviews
-                  </h4>
-                  <p className="text-slate-600">
-                    Aorem ipsum dolor sit amet consectetur adipisicing elit sed
-                    do eiusmod tempor incididunt ut labore et dolore.
+                    We are committed to unwavering excellence, delivering on
+                    promises, and exceeding expectations to build lasting trust
+                    and relationships.
                   </p>
                 </div>
               </div>
@@ -132,13 +104,12 @@ const AboutUs = () => {
               Together We'll Explore New Things
             </h2>
             <p className="mb-5 text-slate-50">
-              Chen an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five
-              centuries, but also the leap into electronic typesetting,
-              remaining essentially.
+            United, we embark on exciting journeys of discovery, embracing fresh experiences, and forging unforgettable memories as we venture into the unknown.
             </p>
             <div>
-              <Button varient={"link"} href="/book-service">Book Service</Button>
+              <Button varient={"link"} href="/book-service">
+                Book Service
+              </Button>
             </div>
           </div>
         </div>

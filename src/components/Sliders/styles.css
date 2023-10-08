@@ -67,6 +67,37 @@
   color: black;
 }
 
+.service-category-slider > .swiper-wrapper {
+  padding: auto 50px;
+}
+
+.service-category-slider .swiper-button-prev {
+  background: yellow;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+.service-category-slider .swiper-button-prev::after {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+.service-category-slider .swiper-button-next {
+  background: yellow;
+  width: 45px;
+  height: 45px;
+  border-radius: 100%;
+  opacity: 1;
+  transition: all ease 0.3s;
+}
+.service-category-slider .swiper-button-next::after {
+  font-size: 14px;
+  font-weight: 700;
+  color: black;
+}
+
 @media only screen and (max-width: 570px) {
   .swiper-slide {
     margin: 0;

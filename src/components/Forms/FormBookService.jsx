@@ -1,8 +1,10 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import { useGlobalState } from "../../state/GlobalStateProvider";
 
 const FormBookService = () => {
+  const { apiUrl } = useGlobalState();
   const {
     register,
     handleSubmit,
@@ -12,7 +14,8 @@ const FormBookService = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    fetch("http://localhost:9000/customer", {
+    reset();
+    fetch(`${apiUrl}customer`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -22,10 +25,10 @@ const FormBookService = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.acknowledgement) {
-          reset();
           toast.success("Welcome! your booking successfully confirmed.");
         }
-      });
+      })
+      .catch((error) => toast.error(error.message));
   };
   return (
     <form
@@ -70,7 +73,7 @@ const FormBookService = () => {
         <input
           {...register("phone", {
             required: true,
-            pattern: /^(9|7)\d{7}$/,
+            pattern: /\d{8,}/,
           })}
           aria-invalid={errors.phone ? "true" : "false"}
           className="w-full px-[20px] py-[15px] bg-slate-100 outline-blue-500 outline-1 rounded"

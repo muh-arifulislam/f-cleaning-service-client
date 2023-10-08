@@ -13,10 +13,9 @@ const ShowcaseSection = () => {
           </div>
           <div className="">
             <p className="text-lg mb-2 text-slate-600">
-              Perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium dol oremque laudantium, totam remeaque
-              ipsaPerspiciatis unde omnis iste natus error sit voluptatem
-              accusanti umoremque.
+              Our recent works showcase our latest achievements, a testament to
+              our commitment to excellence, innovation, and delivering
+              outstanding solutions for our valued clients.
             </p>
           </div>
         </div>

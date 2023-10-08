@@ -8,13 +8,13 @@ import {
 } from "react-icons/fa";
 
 // images
-import image from "../../assets/images/team1-1.png";
+import person from "../../assets/icons/man.png";
 
 const CardMember = ({ name, designation }) => {
   return (
-    <div className="p-[10px] select-none">
-      <div className="mb-[30px] bg-slate-100 rounded-full flex items-center justify-center overflow-hidden transition ease-out duration-300 hover:translate-y-2">
-        <img src={image} alt="" />
+    <div className="px-[10px] py-8 select-none">
+      <div className="mb-[30px] rounded-full flex items-center justify-center overflow-hidden transition ease-out duration-300 hover:translate-y-2">
+        <img className="w-full max-w-[200px]" src={person} alt="" />
       </div>
       <div className="text-center mb-5">
         <h2 className="text-xl font-semibold mb-1 text-primary">{name}</h2>

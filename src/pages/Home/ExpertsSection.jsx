@@ -20,8 +20,8 @@ const ExpertsSection = ({ varient }) => {
               varient === "secondary" ? "text-white" : "text-slate-600"
             }`}
           >
-            Perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            dol oremque laudantium, totam remeaque ipsa.
+            A dedicated team of seasoned professionals, delivering top-tier
+            solutions and insights to meet your business needs.
           </p>
         </div>
         <div className="lg:md:px-0 px-[10px]">

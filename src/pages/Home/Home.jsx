@@ -9,6 +9,7 @@ import SponsorSection from "./SponsorSection";
 import BannerSection from "./BannerSection";
 import TopBannerSection from "./TopBannerSection";
 import ShowcaseSection from "./ShowcaseSection";
+import AddReviewSection from "./AddReviewSection";
 const Home = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ const Home = () => {
       <ExpertsSection />
       <TestimonialSection />
       <SponsorSection />
+      <AddReviewSection />
     </div>
   );
 };

@@ -1,0 +1,450 @@
+[
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "house-cleaning.jpg",
+      "singleFeatures": [
+        "Deep cleaning of kitchen appliances",
+        "Window and glass cleaning",
+        "Carpet and upholstery cleaning",
+        "Customizable cleaning plans"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b2087c",
+    "title": "House Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/house-cleaning.png",
+    "img": "https://api.gocleanix.com/public/images/House-cleaning.jpg",
+    "category": "residential",
+    "sortDescription": "Professional house cleaning services for a sparkling clean home.",
+    "description1": "Our house cleaning service transforms your home into a spotless sanctuary. Our skilled team meticulously tidies every nook and cranny, leaving your space fresh and inviting. Experience the joy of a cleaner, healthier living environment with our top-notch house cleaning.",
+    "description2": "Discover the ultimate in house cleaning excellence. Our dedicated professionals use advanced techniques and eco-friendly products to ensure your home shines. From deep cleaning to regular maintenance, we deliver cleanliness you can trust and enjoy.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c3644805e",
+        "qns": "How often should I schedule house cleaning?",
+        "ans": "We recommend regular weekly or bi-weekly cleaning to maintain a clean and healthy home."
+      },
+      {
+        "_id": "6522b884a74bdd4c3644805f",
+        "qns": "Are your cleaning products safe for pets?",
+        "ans": "Yes, our cleaning products are pet-friendly and non-toxic."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "office-cleaning.jpg",
+      "singleFeatures": [
+        "Janitorial services",
+        "Floor maintenance and polishing",
+        "Specialized cleaning for high-traffic areas",
+        "Flexible cleaning schedules"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b2087d",
+    "title": "Office Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/spray.png",
+    "img": "https://api.gocleanix.com/public/images/office-cleaning.jpg",
+    "category": "commercial",
+    "sortDescription": "Professional office cleaning services to create a productive workspace.",
+    "description1": "Elevate your workplace with our office cleaning service. We understand the importance of a pristine and organized office environment. Our expert team ensures every desk, conference room, and common area is immaculate, promoting productivity and a positive atmosphere for your team and clients.",
+    "description2": "Experience the difference in office hygiene and professionalism. Our office cleaning service goes beyond surface cleaning. We sanitize, disinfect, and maintain your workspace meticulously. Boost your employees' well-being and impress your clients with our thorough and dependable cleaning solutions.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448060",
+        "qns": "Can you clean our office outside of business hours?",
+        "ans": "Yes, we can schedule cleaning services outside of business hours to minimize disruption."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448061",
+        "qns": "Do you provide eco-friendly cleaning options for offices?",
+        "ans": "Absolutely, we offer green cleaning solutions to promote sustainability."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "shop-cleaning.jpg",
+      "singleFeatures": [
+        "Floor waxing and polishing",
+        "Window and display cleaning",
+        "Regular cleaning schedules",
+        "Specialized cleaning for retail fixtures"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b2087e",
+    "title": "Shop Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/cleaning-cart.png",
+    "img": "https://api.gocleanix.com/public/images/shop-cleaning.jpg",
+    "category": "commercial",
+    "sortDescription": "Professional shop cleaning services for a clean and inviting retail space.",
+    "description1": "Our shop cleaning service includes thorough cleaning of your retail area, aisles, and shelves.",
+    "description2": "We ensure that your shop is spotless, creating a welcoming environment for your customers.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448062",
+        "qns": "How often should I schedule shop cleaning?",
+        "ans": "Regular cleaning, such as daily or weekly, is recommended for retail spaces to maintain cleanliness."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448063",
+        "qns": "Do you provide emergency cleaning services for spills?",
+        "ans": "Yes, we offer emergency cleaning services to handle unexpected spills and accidents."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "sofa-cleaning.jpg",
+      "singleFeatures": [
+        "Upholstery fabric protection",
+        "Pet stain and odor removal",
+        "Quick drying process",
+        "Free sofa inspection"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b2087f",
+    "title": "Sofa Deep Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/sofa-cleaning.png",
+    "img": "https://api.gocleanix.com/public/images/sofa-cleaning.jpg",
+    "category": "residential",
+    "sortDescription": "Proficient sofa deep cleaning to revive your furniture's look and feel.",
+    "description1": "Our sofa deep cleaning service removes dirt, stains, and allergens from your sofas, enhancing their lifespan.",
+    "description2": "We use advanced cleaning methods to restore your sofas to their original beauty.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448064",
+        "qns": "How long does it take for the sofa to dry after cleaning?",
+        "ans": "Our quick-drying process typically allows your sofa to be ready for use within a few hours."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448065",
+        "qns": "Is the cleaning process safe for delicate sofa fabrics?",
+        "ans": "Yes, we use gentle cleaning methods suitable for various sofa fabric types."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "carpet-cleaning.jpg",
+      "singleFeatures": [
+        "Stain and spot treatment",
+        "Carpet protection application",
+        "Eco-friendly cleaning solutions",
+        "Rapid drying technology"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20880",
+    "title": "Carpet Deep Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/carpet-cleaning.png",
+    "img": "https://api.gocleanix.com/public/images/carpet-cleaning.jpg",
+    "category": "residential",
+    "sortDescription": "Comprehensive carpet deep cleaning to rejuvenate your floors.",
+    "description1": "Our carpet deep cleaning service eliminates deep-seated dirt, stains, and allergens from your carpets.",
+    "description2": "We use state-of-the-art equipment to leave your carpets looking and smelling fresh.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448066",
+        "qns": "How often should I have my carpets deep cleaned?",
+        "ans": "We recommend deep cleaning your carpets every 12 to 18 months, depending on foot traffic and usage."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448067",
+        "qns": "Is your cleaning process safe for children and pets?",
+        "ans": "Yes, our cleaning solutions are safe for all members of your household."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "mattress-cleaning.jpg",
+      "singleFeatures": [
+        "Anti-allergen treatment",
+        "Sanitization and deodorization",
+        "Quick and efficient service",
+        "Free mattress assessment"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20881",
+    "title": "Mattress Deep Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/steamer.png",
+    "img": "https://api.gocleanix.com/public/images/mattess-cleaning.jpg",
+    "category": "residential",
+    "sortDescription": "Thorough mattress deep cleaning for a healthier sleep environment.",
+    "description1": "Our mattress deep cleaning service removes dust mites, allergens, and stains from your mattress.",
+    "description2": "We use eco-friendly cleaning methods to help you sleep better at night.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448068",
+        "qns": "How often should I clean my mattress?",
+        "ans": "We recommend cleaning your mattress every 6 months to maintain a clean and hygienic sleep surface."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448069",
+        "qns": "Is your cleaning process safe for sensitive skin?",
+        "ans": "Yes, our cleaning solutions are gentle and suitable for sensitive skin."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "curtain-cleaning.jpg",
+      "singleFeatures": [
+        "Same-day service available",
+        "No need to remove curtains",
+        "Stain removal and fabric revitalization",
+        "Professional steam cleaning"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20882",
+    "title": "Curtain Steam Deep Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/steamer.png",
+    "img": "https://api.gocleanix.com/public/images/curtain-steam-cleaning.jpg",
+    "category": "residential",
+    "sortDescription": "Effective curtain steam deep cleaning to refresh your window coverings.",
+    "description1": "Our curtain steam deep cleaning service removes dust, odors, and allergens from your curtains.",
+    "description2": "We provide on-site cleaning, so you don't have to take down your curtains.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c3644806a",
+        "qns": "How long does the curtain cleaning process take?",
+        "ans": "The duration depends on the size and number of curtains, but it's usually completed within a few hours."
+      },
+      {
+        "_id": "6522b884a74bdd4c3644806b",
+        "qns": "Do you provide on-site curtain cleaning services?",
+        "ans": "Yes, we clean curtains right where they hang, providing convenience to our customers."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "cinderella-cleaning.jpg",
+      "singleFeatures": [
+        "Basic home cleaning tasks",
+        "Flexible scheduling",
+        "Trained and trustworthy cleaners",
+        "Affordable pricing"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20883",
+    "title": "Chandeliers Light Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/lamp-cleaning.png",
+    "img": "https://api.gocleanix.com/public/images/chandeliers-light.jpg",
+    "category": "residential",
+    "sortDescription": "Efficient Cinderella light cleaning to maintain a tidy and organized home.",
+    "description1": "Our Cinderella light cleaning service focuses on tidying up your living spaces and maintaining cleanliness.",
+    "description2": "We take care of the chores so you can enjoy your free time without worry.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c3644806c",
+        "qns": "What is included in Cinderella light cleaning?",
+        "ans": "It includes tasks like surface cleaning, dusting, vacuuming, and tidying up living spaces."
+      },
+      {
+        "_id": "6522b884a74bdd4c3644806d",
+        "qns": "Can I schedule Cinderella cleaning on a one-time basis?",
+        "ans": "Yes, you can schedule one-time Cinderella cleaning as needed."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "water-tank-cleaning.jpg",
+      "singleFeatures": [
+        "Comprehensive tank inspection",
+        "Disinfection and sanitization",
+        "Water quality testing",
+        "Regular maintenance plans"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20884",
+    "title": "Water Tank Deep Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/pool-cleaning.png",
+    "img": "https://api.gocleanix.com/public/images/water-tank-cleaning.jpg",
+    "category": "residential",
+    "sortDescription": "Thorough water tank deep cleaning for clean and safe water supply.",
+    "description1": "Our water tank deep cleaning service removes sediment, bacteria, and contaminants from your water storage tank.",
+    "description2": "We ensure the purity of your water supply for your family's health.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c3644806e",
+        "qns": "How often should I clean my water tank?",
+        "ans": "We recommend cleaning your water tank at least once a year to maintain water quality."
+      },
+      {
+        "_id": "6522b884a74bdd4c3644806f",
+        "qns": "Is the cleaning process safe for drinking water?",
+        "ans": "Yes, our cleaning process is designed to ensure safe and clean drinking water."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "pool-cleaning.jpg",
+      "singleFeatures": [
+        "Regular pool maintenance",
+        "Water quality testing",
+        "Equipment inspection and repair",
+        "Affordable pool service plans"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20885",
+    "title": "Swimming Pool Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/pool-cleaning.png",
+    "img": "https://api.gocleanix.com/public/images/swimming-pool-cleaning.jpg",
+    "category": "residential",
+    "sortDescription": "Professional swimming pool cleaning for a crystal-clear pool all year round.",
+    "description1": "Our swimming pool cleaning service includes skimming, vacuuming, and chemical balancing to keep your pool pristine.",
+    "description2": "Enjoy swimming without worrying about pool maintenance.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448070",
+        "qns": "How often should I have my pool cleaned?",
+        "ans": "Regular pool cleaning is recommended, with frequency depending on usage and climate."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448071",
+        "qns": "Is your pool cleaning service suitable for all pool types?",
+        "ans": "Yes, we are equipped to clean and maintain various types of pools."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "marble-grinding.jpg",
+      "singleFeatures": [
+        "Stain and scratch removal",
+        "High-gloss polishing",
+        "Expert technicians",
+        "Customized restoration plans"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20886",
+    "title": "Marble Grinding",
+    "icon": "https://api.gocleanix.com/public/icons/marble-grinding.png",
+    "img": "https://api.gocleanix.com/public/images/marble-grinding.jpg",
+    "category": "commercial",
+    "sortDescription": "Professional marble grinding to restore the shine and elegance of your surfaces.",
+    "description1": "Our marble grinding service smooths out imperfections and revitalizes the beauty of your marble floors and countertops.",
+    "description2": "We bring back the luster of your marble surfaces.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448072",
+        "qns": "How long does the marble grinding process take?",
+        "ans": "The duration depends on the size and condition of the marble surfaces but is typically completed in a few days."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448073",
+        "qns": "Can you handle large commercial marble grinding projects?",
+        "ans": "Yes, we have experience with both residential and commercial marble grinding projects."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "marble-polishing.jpg",
+      "singleFeatures": [
+        "Sealing for long-lasting shine",
+        "Regular maintenance plans",
+        "Safe and eco-friendly products",
+        "Free consultation"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20887",
+    "title": "Marble Polishing",
+    "icon": "https://api.gocleanix.com/public/icons/marble-polishing.png",
+    "img": "https://api.gocleanix.com/public/images/marble polishing.jpg",
+    "category": "commercial",
+    "sortDescription": "Expert marble polishing to enhance the appearance of your marble surfaces.",
+    "description1": "Our marble polishing service restores the shine and brilliance of your marble floors and walls.",
+    "description2": "We bring out the natural beauty of your marble surfaces.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448074",
+        "qns": "How often should I have my marble surfaces polished?",
+        "ans": "We recommend regular polishing to maintain the beauty of your marble surfaces, with frequency depending on usage."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448075",
+        "qns": "Do you offer maintenance plans for marble surfaces?",
+        "ans": "Yes, we provide customized maintenance plans to keep your marble surfaces in top condition."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "marble-shampoo-polishing.jpg",
+      "singleFeatures": [
+        "Customized floor treatment",
+        "Expert technicians",
+        "High-quality cleaning agents",
+        "Regular quality checks"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20888",
+    "title": "Marble & Floor Shampoo Polishing",
+    "icon": "https://api.gocleanix.com/public/icons/m&s-polishing.png",
+    "img": "https://api.gocleanix.com/public/images/marble-and-floor-shampoo-cleaning.jpg",
+    "category": "commercial",
+    "sortDescription": "Specialized marble and floor shampoo polishing for a pristine commercial space.",
+    "description1": "Our marble and floor shampoo polishing service removes dirt and stains, leaving your commercial space looking immaculate.",
+    "description2": "We provide tailored solutions for your specific flooring needs.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448076",
+        "qns": "Can you handle large commercial flooring projects?",
+        "ans": "Yes, we have the capacity and expertise to handle large-scale commercial flooring projects."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448077",
+        "qns": "What types of flooring can you work with?",
+        "ans": "We specialize in marble and various other types of flooring."
+      }
+    ]
+  },
+  {
+    "addFeature": {
+      "title": "Additional Features",
+      "thumbnailImg": "garden-cutting.jpg",
+      "singleFeatures": [
+        "Seasonal garden maintenance",
+        "Weed control and fertilization",
+        "Professional gardeners",
+        "Custom garden design"
+      ]
+    },
+    "_id": "65228a4ba226f01a90b20889",
+    "title": "Garden Cutting & Cleaning",
+    "icon": "https://api.gocleanix.com/public/icons/garden-cleaning.png",
+    "img": "https://api.gocleanix.com/public/images/garden cleaning.jpg",
+    "category": "residential",
+    "sortDescription": "Proficient garden cutting and cleaning services for a well-maintained outdoor space.",
+    "description1": "Our garden cutting and cleaning service includes lawn mowing, hedge trimming, and debris removal.",
+    "description2": "We transform your garden into a beautiful and tidy outdoor oasis.",
+    "faq": [
+      {
+        "_id": "6522b884a74bdd4c36448078",
+        "qns": "How often should I have my garden cut and cleaned?",
+        "ans": "Regular maintenance, typically seasonally, is recommended to keep your garden in top shape."
+      },
+      {
+        "_id": "6522b884a74bdd4c36448079",
+        "qns": "Do you provide landscape design services?",
+        "ans": "Yes, we offer custom garden design services to enhance your outdoor space."
+      }
+    ]
+  }
+]

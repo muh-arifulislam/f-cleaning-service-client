@@ -31,19 +31,13 @@ const SliderExperts = () => {
       className="mySwiper"
     >
       <SwiperSlide>
-        <CardMember name="Paul Hovsta" designation="Employee" />
+        <CardMember name="Md. Nurul Islam" designation="Employee" />
       </SwiperSlide>
       <SwiperSlide>
-        <CardMember name="Paul Hovsta" designation="Employee" />
+        <CardMember name="Md. Jahidul Hasan" designation="Employee" />
       </SwiperSlide>
       <SwiperSlide>
-        <CardMember name="Paul Hovsta" designation="Employee" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardMember name="Paul Hovsta" designation="Employee" />
-      </SwiperSlide>
-      <SwiperSlide>
-        <CardMember name="Paul Hovsta" designation="Employee" />
+        <CardMember name="Md. Shahidul Islam" designation="Employee" />
       </SwiperSlide>
     </Swiper>
   );

@@ -5,19 +5,26 @@ import Button from "../../components/Button/Button";
 import { Link } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { toast } from "react-toastify";
+import { useGlobalState } from "../../state/GlobalStateProvider";
 
 const TopBannerSection = () => {
+  const { apiUrl } = useGlobalState();
   const {
     register,
     handleSubmit,
     reset,
-    clearErrors,
     formState: { errors },
+  } = useForm();
+  const {
+    register: registerMobile,
+    handleSubmit: handleSubmitMobile,
+    reset: resetMobile,
+    formState: { errors: errorsMobile },
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
-    fetch("http://localhost:9000/customer", {
+    reset();
+    fetch(`${apiUrl}customer`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -27,10 +34,27 @@ const TopBannerSection = () => {
       .then((res) => res.json())
       .then((data) => {
         if (data.acknowledgement) {
-          reset();
           toast.success("Welcome! your booking successfully confirmed.");
         }
-      });
+      })
+      .catch((error) => toast.error(error.message));
+  };
+  const onSubmitMobile = (data) => {
+    resetMobile();
+    fetch(`${apiUrl}customer`, {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(data),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.acknowledgement) {
+          toast.success("Welcome! your booking successfully confirmed.");
+        }
+      })
+      .catch((error) => toast.error(error.message));
   };
   return (
     <section className="">
@@ -98,7 +122,7 @@ const TopBannerSection = () => {
                   <input
                     {...register("phone", {
                       required: true,
-                      pattern: /^(9|7)\d{7}$/,
+                      pattern: /\d{8,}/,
                     })}
                     aria-invalid={errors.phone ? "true" : "false"}
                     className="w-full px-3 py-3 border outline-none rounded-md"
@@ -136,30 +160,43 @@ const TopBannerSection = () => {
               Request for Query
             </h3>
           </div>
-          <form action="">
+          <form onClick={handleSubmitMobile(onSubmitMobile)}>
             <div className="grid lg:grid-cols-4 grid-cols-1 gap-4">
               <div>
                 <input
-                  className="w-full px-3 py-3 border outline-1  rounded-md"
+                  {...registerMobile("name", { required: true, maxLength: 20 })}
+                  className="w-full px-3 py-3 border outline-none rounded-md"
                   type="text"
                   placeholder="Name*"
+                  autoComplete="off"
                 />
               </div>
               <div>
                 <input
-                  className="w-full px-3 py-3 border outline-1 rounded-md"
-                  type="phone"
-                  name=""
-                  id=""
-                  placeholder="Phone*"
+                  {...registerMobile("address", {
+                    required: true,
+                  })}
+                  className="w-full px-3 py-3 border outline-none rounded-md"
+                  type="text"
+                  name="address"
+                  id="address"
+                  placeholder="Address*"
+                  autoComplete="off"
                 />
               </div>
               <div>
-                <select className="w-full px-3 py-3 border outline-1 rounded-md">
-                  <option value="0">Select Service:</option>
-                  <option value="1">Audi</option>
-                  <option value="2">BMW</option>
-                </select>
+                <input
+                  {...registerMobile("phone", {
+                    required: true,
+                    pattern: /\d{8,}/,
+                  })}
+                  className="w-full px-3 py-3 border outline-none rounded-md"
+                  type="text"
+                  name="phone"
+                  id="phone"
+                  placeholder="Phone*"
+                  autoComplete="off"
+                />
               </div>
               <div>
                 <input

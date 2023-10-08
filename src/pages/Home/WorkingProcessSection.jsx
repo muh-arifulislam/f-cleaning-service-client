@@ -13,8 +13,7 @@ const WorkingProcessSection = () => {
         <div className="text-center lg:md:mb-[100px] mb-10">
           <h2 className="rtin-title font-semibold mb-5">Our Working Process</h2>
           <p className="lg:md:w-[60%] w-[80%]  mx-auto text-slate-600">
-            Perspiciatis unde omnis iste natus error sit voluptatem accusantium
-            dol oremque laudantium, totam remeaque ipsa.
+          A well-defined, collaborative approach that maximizes productivity, fosters creativity, and delivers exceptional outcomes, consistently exceeding expectations.
           </p>
         </div>
         <div
@@ -26,17 +25,17 @@ const WorkingProcessSection = () => {
           <CardWorkingProcess
             IconComponent={BsCalendarCheck}
             title="Book Online form"
-            content="Ahen an unknown printer took a galley type and scrambled nknown printer."
+            content="Conveniently order books online, with a vast selection and easy delivery options at your fingertips."
           />
           <CardWorkingProcess
             IconComponent={BsEnvelope}
             title="Get Confirmation"
-            content="Ahen an unknown printer took a galley type and scrambled nknown printer."
+            content="Receive instant assurance and peace of mind with our swift and reliable confirmation service."
           />
           <CardWorkingProcess
             IconComponent={BsEmojiLaughing}
             title="Let's Enjoy"
-            content="Ahen an unknown printer took a galley type and scrambled nknown printer."
+            content="Let's enjoy life to the fullest, embracing every moment with joy, laughter, and gratitude."
           />
         </div>
       </div>
