@@ -65,12 +65,12 @@ const TopBannerSection = () => {
               The Best Cleaning Service Ever!
             </p>
             <p className="lg:text-[58px] md:text-[58px] text-5xl font-semibold leading-[1.3] mb-[20px]">
-              We Are Certified Company
+              Revitalize Your Space With Go Cleanix
             </p>
             <p className="text-lg lg:w-[50%] md:w-[50%] w-[80%] mx-auto mb-[40px]">
-              Our best-in-class WordPress solution, with additional optimization
-              to make running a WooCommerce online storer and straight forward
-              so you can.
+              Welcome to "Go Cleanix" – your premier Cleaning Service Provider
+              in Muscat, Oman. We are dedicated to delivering top-notch cleaning
+              solutions that redefine cleanliness and convenience.
             </p>
             <Button varient="link" href="/book-service">
               Take On Service
