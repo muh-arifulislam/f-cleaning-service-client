@@ -177,7 +177,7 @@ const Footer = () => {
                 <FaPhone />
               </span>
               <a
-                href="tel:+985-8844-000"
+                href="tel:+968-95527-539"
                 className="text-slate-400 font-medium transition hover:text-white"
               >
                 +968-95527-539
@@ -188,7 +188,7 @@ const Footer = () => {
                 <FaPhone />
               </span>
               <a
-                href="tel:+985-8844-000"
+                href="tel:+968-95546-049"
                 className="text-slate-400 font-medium transition hover:text-white"
               >
                 +968-95546-049
@@ -199,10 +199,10 @@ const Footer = () => {
                 <FaEnvelope />
               </span>
               <a
-                href="mailto:info@cleanix.com"
+                href="mailto:info@gocleanix.com"
                 className="text-slate-400 font-medium transition hover:text-white"
               >
-                info@cleanix.com
+                info@gocleanix.com
               </a>
             </h4>
             <div className="grid grid-cols-3 ">

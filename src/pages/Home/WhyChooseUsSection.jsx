@@ -1,7 +1,7 @@
 import React from "react";
 import { BsCheckCircle } from "react-icons/bs";
 
-// images 
+// images
 import personImage1 from "../../assets/images/img_tri_1.png";
 import personImage2 from "../../assets/images/img_tri_2.png";
 import personImage3 from "../../assets/images/img_tri_3.png";
@@ -18,9 +18,9 @@ const WhyChooseUsSection = () => {
             We Will Make Absolutely Any Place Clean, Neat & Tidy.
           </h2>
           <p className="mb-5 text-slate-600">
-            Spa isa newsimply dummy text of the printing and type settingreat
-            industrial lorem Ipsum has been the industry's standard dummy text
-            everty since the when an unknown centurie.
+            Choose us for exceptional service, reliability, and a commitment to
+            your satisfaction. Experience the difference in quality and
+            convenience with our team.
           </p>
           <div>
             <ul>
@@ -31,11 +31,12 @@ const WhyChooseUsSection = () => {
                   </span>
                   <div className="mb-5">
                     <h4 className="text-[22px] text-primary leading-[1.4] font-semibold mb-3">
-                      Customer Focused Reviews
+                      Your Trusted Cleaning Partner
                     </h4>
                     <p className="text-slate-600">
-                      Aorem ipsum dolor sit amet consectetur adipisicing elit
-                      sed do eiusmod tempor incididunt ut labore et dolore.
+                      We offer trusted, professional cleaning services, backed
+                      by a track record of excellence and a commitment to your
+                      satisfaction.
                     </p>
                   </div>
                 </div>
@@ -47,11 +48,12 @@ const WhyChooseUsSection = () => {
                   </span>
                   <div className="mb-5">
                     <h4 className="text-[22px] text-primary leading-[1.4] font-semibold mb-3">
-                      Customer Focused Reviews
+                      Quality, Convenience, Confidence
                     </h4>
                     <p className="text-slate-600">
-                      Aorem ipsum dolor sit amet consectetur adipisicing elit
-                      sed do eiusmod tempor incididunt ut labore et dolore.
+                      Option for us and enjoy top-quality cleaning, hassle-free
+                      scheduling, and the confidence of a cleaner, healthier
+                      environment.
                     </p>
                   </div>
                 </div>
@@ -63,11 +65,12 @@ const WhyChooseUsSection = () => {
                   </span>
                   <div>
                     <h4 className="text-[22px] text-primary leading-[1.4] font-semibold mb-3">
-                      Customer Focused Reviews
+                      Elevate Your Cleanliness Standards
                     </h4>
                     <p className="text-slate-600">
-                      Aorem ipsum dolor sit amet consectetur adipisicing elit
-                      sed do eiusmod tempor incididunt ut labore et dolore.
+                      Choose us to elevate your cleanliness standards with our
+                      dedicated team, cutting-edge solutions, and a commitment
+                      to exceeding your expectations.
                     </p>
                   </div>
                 </div>

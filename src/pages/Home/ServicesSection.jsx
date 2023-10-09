@@ -15,10 +15,7 @@ const ServicesSection = () => {
           </div>
           <div className="">
             <p className="text-lg mb-2 text-slate-600">
-              Perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium dol oremque laudantium, totam remeaque
-              ipsaPerspiciatis unde omnis iste natus error sit voluptatem
-              accusanti umoremque.
+            We deliver top-notch cleaning services tailored to your needs, ensuring a spotless and refreshed space. Trust us for a cleaner, healthier environment that exceeds your expectations.
             </p>
           </div>
         </div>

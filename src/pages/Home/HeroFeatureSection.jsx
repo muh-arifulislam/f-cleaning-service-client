@@ -21,14 +21,14 @@ const HeroFeatureSection = () => {
             <span className="font-light">As Good As New</span>
           </h4>
           <p className="text-lg mb-5 text-slate-600">
-            Spa isa newsimply dummy text of the printing and type settingare
-            industrLorem Ipsum has been the industry's standard dummy text
-            everty since the when an unknown centuries.
+            Our cleaning website streamlines the process: pick your service,
+            schedule,call and our experts deliver impeccable results, leaving
+            your space clean and refreshed.
           </p>
           <p className="text-lg mb-5 text-slate-600">
-            Spa isa newsimply dummy text of the printing and type settingare
-            industrLorem Ipsum has been the industry's standard dummy text
-            everty since the when an unknown centuries.
+            Effortlessly book top-notch cleaning services online. Choose your
+            service, set a schedule, and our dedicated team will ensure a
+            spotless, revitalized environment.
           </p>
           <ul className="mb-[40px]">
             <li className="mb-[6px]">

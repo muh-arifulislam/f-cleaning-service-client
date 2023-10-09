@@ -150,7 +150,7 @@ const Navbar = () => {
                     <h4>Quick Contact</h4>
                     <a
                       className="font-bold text-[20px]"
-                      href="tel:+8801306560747"
+                      href="tel:+968-95527-539"
                     >
                       +968 95527 539
                     </a>

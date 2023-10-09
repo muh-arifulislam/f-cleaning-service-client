@@ -34,7 +34,7 @@ const GlobalStateProvider = ({ children }) => {
     };
 
     fetchData("services", FETCH_SERVICES, state.apiUrl + "services");
-    fetchData("reviews", FETCH_REVIEWS, state.apiUrl + "reviews");
+    fetchData("reviews", FETCH_REVIEWS, state.apiUrl + "reviews?filter=true");
     fetchData("showcases", FETCH_SHOWCASES, state.apiUrl + "showcases");
   }, []);
 
