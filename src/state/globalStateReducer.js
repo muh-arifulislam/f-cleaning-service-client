@@ -23,7 +23,7 @@ export const initialState = {
     loading: false,
     error: null,
   },
-  apiUrl: "http://localhost:9000/",
+  apiUrl: "https://cleaning-service-server-one.vercel.app/",
 };
 
 const globalStateReducer = (state, action) => {

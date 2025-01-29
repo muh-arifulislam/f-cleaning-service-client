@@ -27,7 +27,16 @@ const GlobalStateProvider = ({ children }) => {
         // Fetch data
         const response = await fetch(url);
         const data = await response.json();
-        dispatch({ type: type, payload: data });
+
+        if (data?.success) {
+          dispatch({ type: type, payload: data?.data });
+        } else {
+          dispatch({
+            type: SET_ERROR,
+            target,
+            payload: "Failed to fetch data",
+          });
+        }
       } catch (error) {
         dispatch({ type: SET_ERROR, target, payload: error.message });
       }

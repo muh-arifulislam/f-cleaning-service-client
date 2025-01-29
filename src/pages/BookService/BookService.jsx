@@ -6,9 +6,9 @@ import { toast } from "react-toastify";
 
 // components
 import SectionHeader from "../../components/SectionHeader";
-import FormSentMessage from "../../components/Forms/FormSentMessage";
 import Newsletter from "../../components/Newsletter";
 import CardServiceLink from "../../components/Cards/CardServiceLink";
+import { useGlobalState } from "../../state/GlobalStateProvider";
 
 const BookService = () => {
   const {
@@ -19,32 +19,33 @@ const BookService = () => {
     formState: { errors },
   } = useForm();
 
+  const { apiUrl } = useGlobalState();
+
   const onSubmit = (data) => {
-    const newdata = {
+    const payload = {
       name: data.name,
       phone: data.phone,
       email: data.email,
       address: data.area + ", " + data.city,
     };
     reset();
-    fetch("http://localhost:9000/orders", {
+
+    fetch(`${apiUrl}orders`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
       },
-      body: JSON.stringify(newdata),
+      body: JSON.stringify(payload),
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.acknowledgement) {
+        if (data.success) {
           toast.success("Welcome! your booking successfully confirmed.");
         } else {
           toast.error("something going wrong");
         }
       })
-      .catch((error) => {
-        toast.error(error.message);
-      });
+      .catch((error) => toast.error(error.message));
   };
   return (
     <section>

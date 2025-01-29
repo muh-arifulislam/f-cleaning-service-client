@@ -24,7 +24,7 @@ const FormAddReview = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.acknowledgement) {
+        if (data.success) {
           toast.success("Welcome! your review successfully added.");
         } else {
           if (data?.error?.code === 11000) {

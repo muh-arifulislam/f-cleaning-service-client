@@ -33,7 +33,7 @@ const TopBannerSection = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.acknowledgement) {
+        if (data.success) {
           toast.success("Welcome! your booking successfully confirmed.");
         }
       })

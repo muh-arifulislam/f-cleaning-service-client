@@ -15,7 +15,7 @@ const FormBookService = () => {
 
   const onSubmit = (data) => {
     reset();
-    fetch(`${apiUrl}customer`, {
+    fetch(`${apiUrl}orders`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
@@ -24,8 +24,10 @@ const FormBookService = () => {
     })
       .then((res) => res.json())
       .then((data) => {
-        if (data.acknowledgement) {
+        if (data.success) {
           toast.success("Welcome! your booking successfully confirmed.");
+        } else {
+          toast.error("something going wrong");
         }
       })
       .catch((error) => toast.error(error.message));
