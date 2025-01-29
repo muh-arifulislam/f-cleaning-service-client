@@ -48,7 +48,7 @@ const SliderShowcases = () => {
         {showcases?.data?.map((showcase) => (
           <SwiperSlide
             onClick={() => {
-              setModalViewImg(`${apiUrl + "uploads/images/" + showcase.img}`);
+              setModalViewImg(showcase?.img);
               openModal();
             }}
             key={showcase?._id}

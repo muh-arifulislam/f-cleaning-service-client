@@ -15,7 +15,7 @@ const FormAddReview = () => {
   const onSubmit = (data) => {
     reset();
 
-    fetch(`${apiUrl}review`, {
+    fetch(`${apiUrl}reviews`, {
       method: "POST",
       headers: {
         "content-type": "application/json",

@@ -27,7 +27,7 @@ const BookService = () => {
       address: data.area + ", " + data.city,
     };
     reset();
-    fetch("https://api.gocleanix.com/customer", {
+    fetch("http://localhost:9000/orders", {
       method: "POST",
       headers: {
         "content-type": "application/json",

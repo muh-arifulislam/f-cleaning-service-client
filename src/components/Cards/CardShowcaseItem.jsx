@@ -14,7 +14,7 @@ const CardShowcaseItem = ({ showcase }) => {
     >
       <img
         className="w-auto lg:md:h-[360px] h-[340px] object-cover"
-        src={`https://api.gocleanix.com/public/uploads/images/${showcase.img}`}
+        src={`${showcase.img}`}
         alt=""
       />
       <div

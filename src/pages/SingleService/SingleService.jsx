@@ -10,7 +10,6 @@ import Accordion from "../../components/Accordions/Accordion";
 import Newsletter from "../../components/Newsletter";
 
 // images
-import image from "../../assets/images/house5.jpg";
 import { useGlobalState } from "../../state/GlobalStateProvider";
 import CardServiceLink from "../../components/Cards/CardServiceLink";
 import { useForm } from "react-hook-form";

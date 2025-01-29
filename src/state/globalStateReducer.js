@@ -23,7 +23,7 @@ export const initialState = {
     loading: false,
     error: null,
   },
-  apiUrl: "https://api.gocleanix.com/",
+  apiUrl: "http://localhost:9000/",
 };
 
 const globalStateReducer = (state, action) => {

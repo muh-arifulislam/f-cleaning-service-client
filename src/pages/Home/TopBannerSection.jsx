@@ -24,7 +24,7 @@ const TopBannerSection = () => {
 
   const onSubmit = (data) => {
     reset();
-    fetch(`${apiUrl}customer`, {
+    fetch(`${apiUrl}orders`, {
       method: "POST",
       headers: {
         "content-type": "application/json",
