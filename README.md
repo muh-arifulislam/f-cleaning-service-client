@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Cleaning Service - Customer Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Live Website: [https://gocleanix.netlify.app/](https://gocleanix.netlify.app/)
 
-## Available Scripts
+This is the **customer frontend** of the Cleaning Service Website, where users can explore services, place orders, leave reviews, and view previous showcase projects. The application is built as a **Single Page Application (SPA)** using **React.js**.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Service Browsing:** Customers can explore available cleaning services.
+- **Service Details:** View detailed information about each service.
+- **Booking System:** Customers can book services online.
+- **Showcase:** View completed service showcase projects.
+- **Review System:** Customers can post reviews about services.
+- **User-friendly Navigation:** Smooth navigation using React Router DOM.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tech Stack
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Frontend Framework:** React.js
+- **State Management:** React Hooks
+- **Routing:** React Router DOM
+- **Form Handling:** React Hook Form
+- **Styling:** Tailwind CSS
+- **API Communication:** Fetching data from Express.js backend
 
-### `npm test`
+## Pages
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Home** - Overview of services and features
+- **About** - Information about the cleaning service
+- **Services** - List of available services
+- **Showcase** - Gallery of past service projects
+- **Book Service** - Form to book a cleaning service
+- **Contact** - Contact details and inquiry form
 
-### `npm run build`
+## Installation & Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```sh
+   git clone https://github.com/muh-arifulislam/f-cleaning-service-client
+   cd f-cleaning-service-client
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+   ```sh
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the application:
+   ```sh
+   npm run start
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## API Integration
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This frontend communicates with the backend server hosted at:
+[https://cleaning-service-server-one.vercel.app/](https://cleaning-service-server-one.vercel.app/)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+backend project: [https://github.com/muh-arifulislam/f-cleaning-service-server](https://github.com/muh-arifulislam/f-cleaning-service-server)
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This project is licensed under the MIT License.
